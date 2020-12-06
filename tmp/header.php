@@ -5,16 +5,61 @@
 	<?php require_once 'library/main.php';?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>By.Wlop</title>
+	<title>Music</title>
+	<script type="text/javascript" src='js/jQuery.js'></script>
+	<script type="text/javascript" src='js/fontawesome.js'></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bsnav.min.css">
 	<link rel="stylesheet" type="text/css" href="font/font.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet/less" type="text/css" href="css/main.less">
     <link rel="shortcut icon" href="">
   </head>
 <body>	
 	<div class="wrapper">
 		<header id="header">
 			<div class="container">
-				header
+				<div class="header navbar navbar-expand-lg bsnav">
+					<div class="logo">
+					<a href="/?page=index"><img src="img/logo.png"></a>
+					</div>
+					<button class="navbar-toggler toggler-spring" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="main-menu collapse navbar-collapse">
+						<ul class="navbar-nav nav-margin">
+							<li class="active">
+								<a href="">HOME</a>
+							</li>
+							<li>
+								<a href="">GALLERY</a>
+							</li>
+							<li>
+								<a href="">NEWS</a>
+							</li>
+							<li>
+								<a href="">ALBUMS</a>
+							</li>
+							<li>
+								<a href="">BLOG</a>
+							</li>
+						</ul>
+						<div class="social">
+							<a class="user" href="">
+								<span class="icon icon-user">
+									<i class="far fa-user"></i>
+									User
+								</span>
+							</a>
+							<div class="search">
+                             	<form role="form">
+                            	 	<input type="text" class="search-form" autocomplete="off" placeholder="Search">
+									<i class="fas fa-search text-grey" aria-hidden="true"></i>
+                            	</form>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
 		<div class="content">

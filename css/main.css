@@ -16,8 +16,11 @@ body {
     font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 600;
-    font-size: 1.2rem;
-    line-height: 1.5;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0rem;
 }
 
 div{	
@@ -30,13 +33,24 @@ img{
 
 button{
 	cursor: pointer;
-	button:focus;
 	outline: none;
 }
 
 button:focus {
     outline: 0px dotted;
     outline: 0px auto -webkit-focus-ring-color;
+}
+
+input[type="text"]{
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+input {
+    outline: none;
 }
 
 @media (max-width: 991px) {
@@ -83,6 +97,13 @@ a:focus {
     margin: 0 auto;
 }
 
+@media (min-width: 576px){
+	.container {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
+
 @media (max-width: 1200px){
 	.container {
 		width: 90%;
@@ -92,4 +113,199 @@ a:focus {
 .content{
 	flex: 1 0 auto;
 	width: 100%;
+}
+
+/* шапка */
+header{
+	background: #191919;
+	color: #ffff;
+}
+
+.header{
+	display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.header a{
+	color: inherit;
+}
+
+.header .logo{
+	height: 70px;
+}
+
+.logo img{
+	height: 100%;
+}
+
+.header .main-menu ul{
+	display: -ms-flexbox;
+    display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	flex-flow: row wrap;
+	text-decoration: none;
+	list-style: none;
+}
+
+.header .main-menu li{
+	padding-left: 2.9rem;
+}
+
+.header .main-menu .social{
+	display: flex;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	margin-left: 1.5rem;
+}
+
+.header .main-menu .social .user{
+	margin-right: 0.5rem;
+}
+
+.icon-user {
+    padding: 0px 10px;
+    border-right-color: white;
+    border-right-style: solid;
+    border-right-width: 3px;
+}
+
+@media (min-width: 991px) {
+	input.search-form {
+		background: transparent;
+		border: 0 none;
+		width: 60px;
+		padding: 0 10px;
+		color: #ffff;
+		-webkit-transition: all 400ms;
+		transition: all 400ms;
+	}
+
+	input.search-form::-webkit-input-placeholder { color: transparent; }
+	input.search-form:-moz-placeholder { color: transparent; } /* FF 4-18 */
+	input.search-form::-moz-placeholder { color: transparent; } /* FF 19+ */
+	input.search-form:-ms-input-placeholder { color: transparent; } /* IE 10+ */
+
+	input.search-form:hover::-webkit-input-placeholder { color: #b7b7b7; }
+	input.search-form:hover:-moz-placeholder { color: #b7b7b7; } /* FF 4-18 */
+	input.search-form:hover::-moz-placeholder { color: #b7b7b7; } /* FF 19+ */
+	input.search-form:hover:-ms-input-placeholder { color: #b7b7b7; } /* IE 10+ */
+
+	input.search-form:hover {
+   			width: 180px;
+	}
+}
+
+@media (max-width: 991px) {
+
+	.header .main-menu .social{
+		margin-left: 0rem;
+	}
+
+	.header .main-menu{
+		margin-top: 30px;
+	}
+
+	.header .main-menu  .social{
+		margin-top: 15px;
+	}
+
+	.header .main-menu li{
+		padding-left: 0px;
+		padding-right: 1.5rem;
+	}
+
+	input.search-form {
+		background: transparent;
+		border: 0px;
+		width: 300px;
+		padding: 0 0px;
+		padding-right: 10px;
+		color: #ffff;
+		-webkit-transition: all 400ms;
+		transition: all 400ms;
+	}
+
+}
+
+
+@media (max-width: 767px){
+	input.search-form, input.search-form:hover {
+		width: 180px;
+		border: 0px;
+	}
+}
+
+.bsnav {
+    background: none;
+}
+
+.navbar {
+    padding: 0.5rem 0rem;
+}
+
+.navbar-collapse {
+    -ms-flex-positive: inherit;
+    flex-grow: inherit;
+}
+
+.navbar-toggler .navbar-toggler-icon, .navbar-toggler .navbar-toggler-icon::after, .navbar-toggler .navbar-toggler-icon::before {
+	background-color: #ffff;
+}
+
+
+
+
+
+
+
+
+
+
+/* шапка */
+.footer{
+	background: #ffffff;
+	border-top: 1px solid #d2d2d2;
+}
+
+.footer a{
+	color: #333333;
+}
+
+.foot-content{
+	display: flex;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+	text-align: center;
+	padding: 4.3rem 0rem;
+}
+
+.foot-content ul{
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: center;
+	-webkit-justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.foot-content ul li{
+	padding: 0rem 1.9rem;
+}
+
+.foot-content span {
+	font-family: 'Great Vibes';
+	font-weight: 400;
+	font-style: normal;
+    color: #df001f;
 }
