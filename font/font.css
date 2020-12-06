@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Droid Sans';
+    src: local('Droid Sans'), local('DroidSans'), url('droidsans.woff2') format('woff2'), url('droidsans.woff') format('woff'), url('droidsans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Droid Sans';
+    src: local('Droid Sans Bold'), local('DroidSans-Bold'), url('droidsansbold.woff2') format('woff2'), url('droidsansbold.woff') format('woff'), url('droidsansbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Great Vibes';
+    src: local('Great Vibes'), local('GreatVibes-Regular'), url('greatvibes.woff2') format('woff2'), url('greatvibes.woff') format('woff'), url('greatvibes.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: local('Myriad Pro Semibold'), local('Myriad-Pro-Semibold'),
+        url('MyriadPro-Semibold.woff2') format('woff2'),
+        url('MyriadPro-Semibold.woff') format('woff'),
+        url('MyriadPro-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light'), local('OpenSans-Light'), url('opensanslight.woff2') format('woff2'), url('opensanslight.woff') format('woff'), url('opensanslight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url('opensanslightitalic.woff2') format('woff2'), url('opensanslightitalic.woff') format('woff'), url('opensanslightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'), url('opensans.woff2') format('woff2'), url('opensans.woff') format('woff'), url('opensans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url('opensansitalic.woff2') format('woff2'), url('opensansitalic.woff') format('woff'), url('opensansitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('opensanssemibold.woff2') format('woff2'), url('opensanssemibold.woff') format('woff'), url('opensanssemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url('opensanssemibolditalic.woff2') format('woff2'), url('opensanssemibolditalic.woff') format('woff'), url('opensanssemibolditalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('opensansbold.woff2') format('woff2'), url('opensansbold.woff') format('woff'), url('opensansbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('opensansbolditalic.woff2') format('woff2'), url('opensansbolditalic.woff') format('woff'), url('opensansbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('opensansextrabold.woff2') format('woff2'), url('opensansextrabold.woff') format('woff'), url('opensansextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Extrabold Italic'), local('OpenSans-ExtraboldItalic'), url('opensansextrabolditalic.woff2') format('woff2'), url('opensansextrabolditalic.woff') format('woff'), url('opensansextrabolditalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald Light'), local('Oswald-Light'), url('Oswaldlight.woff2') format('woff2'), url('Oswaldlight.woff') format('woff'), url('Oswaldlight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald Regular'), local('Oswald-Regular'), url('Oswaldregular.woff2') format('woff2'), url('Oswaldregular.woff') format('woff'), url('Oswaldregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald DemiBold'), local('Oswald-DemiBold'), url('Oswalddemibold.woff2') format('woff2'), url('Oswalddemibold.woff') format('woff'), url('Oswalddemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald RegularItalic'), local('Oswald-RegularItalic'), url('Oswaldregularitalic.woff2') format('woff2'), url('Oswaldregularitalic.woff') format('woff'), url('Oswaldregularitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald MediumItalic'), local('Oswald-MediumItalic'), url('Oswaldmediumitalic.woff2') format('woff2'), url('Oswaldmediumitalic.woff') format('woff'), url('Oswaldmediumitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald ExtraLightItalic'), local('Oswald-ExtraLightItalic'), url('Oswaldextralightitalic.woff2') format('woff2'), url('Oswaldextralightitalic.woff') format('woff'), url('Oswaldextralightitalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald HeavyItalic'), local('Oswald-HeavyItalic'), url('Oswaldheavyitalic.woff2') format('woff2'), url('Oswaldheavyitalic.woff') format('woff'), url('Oswaldheavyitalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald Heavy'), local('Oswald-Heavy'), url('Oswaldheavy.woff2') format('woff2'), url('Oswaldheavy.woff') format('woff'), url('Oswaldheavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald LightItalic'), local('Oswald-LightItalic'), url('Oswaldlightitalic.woff2') format('woff2'), url('Oswaldlightitalic.woff') format('woff'), url('Oswaldlightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald Medium'), local('Oswald-Medium'), url('Oswaldmedium.woff2') format('woff2'), url('Oswaldmedium.woff') format('woff'), url('Oswaldmedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald ExtraLight'), local('Oswald-ExtraLight'), url('Oswaldextralight.woff2') format('woff2'), url('Oswaldextralight.woff') format('woff'), url('Oswaldextralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald BoldItalic'), local('Oswald-BoldItalic'), url('Oswaldbolditalic.woff2') format('woff2'), url('Oswaldbolditalic.woff') format('woff'), url('Oswaldbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald DemiBoldItalic'), local('Oswald-DemiBoldItalic'), url('Oswalddemibolditalic.woff2') format('woff2'), url('Oswalddemibolditalic.woff') format('woff'), url('Oswalddemibolditalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald Bold'), local('Oswald-Bold'), url('Oswaldbold.woff2') format('woff2'), url('Oswaldbold.woff') format('woff'), url('Oswaldbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
