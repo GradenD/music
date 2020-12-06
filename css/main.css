@@ -118,6 +118,7 @@ a:focus {
 /* шапка */
 header{
 	background: #191919;
+	box-shadow: 0px 10px 10px rgba(5, 12, 22, 0.54);
 	color: #ffff;
 }
 
@@ -258,9 +259,49 @@ header{
 }
 
 
+/* index */
+.slider{
+    height: 480px;
+	width: 100%;
+}
 
+.slider .carousel{
+    height: 100%;
+	width: 100%;
+}
 
+.carousel-caption {
+    bottom: 40%;
+}
 
+.slider .carousel .carousel-inner{
+    height: 100%;
+	width: 100%;
+}
+
+.slider .carousel .carousel-inner .carousel-item{
+    height: 100%;
+	width: 100%;
+}
+
+.carousel-item img{
+    height: 100%;
+	width: 100%;
+}
+
+@media (max-width: 991px){
+	.d-md-block {
+    	display: block!important;
+	}
+
+	.slider{
+		height: 280px;
+	}
+
+	.carousel-caption {
+		bottom: 30%;
+	}
+}
 
 
 
