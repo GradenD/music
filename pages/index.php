@@ -35,3 +35,8 @@
   		</a>
 	</div>
 </div>
+<div class="container">
+	<div class="trending">
+		
+	</div>
+</div>

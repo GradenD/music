@@ -261,7 +261,7 @@ header{
 
 /* index */
 .slider{
-    height: 480px;
+    height: 30rem;
 	width: 100%;
 }
 
@@ -295,12 +295,16 @@ header{
 	}
 
 	.slider{
-		height: 280px;
+		height: 17.5rem;
 	}
 
 	.carousel-caption {
 		bottom: 30%;
 	}
+}
+
+.trending{
+	padding: 7.5rem 0rem;
 }
 
 
