@@ -1,5 +1,19 @@
 $(document).ready(function(){
+	$('.preloader').fadeOut();
+
 	$('.carousel').carousel({
 		interval: 5000
-	})
+	});
+
+	[].forEach.call(document.querySelectorAll('img[data-src]'), function(img)
+	{
+    	img.setAttribute('src', img.getAttribute('data-src'));
+    	img.onload = function() {
+    		img.removeAttribute('data-src');
+ 		};
+	});
 })
+
+$( function(){
+	$( 'audio' ).audioPlayer();
+});

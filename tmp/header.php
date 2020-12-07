@@ -7,16 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Music</title>
 	<script type="text/javascript" src='js/jQuery.js'></script>
+	<script type="text/javascript" src='js/jquery.jplayer.min.js'></script>
+	<script type="text/javascript" src='js/jplayer.playlist.min.js'></script>
 	<script type="text/javascript" src='js/fontawesome.js'></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bsnav.min.css">
 	<link rel="stylesheet" type="text/css" href="font/font.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/audio-touch.css">
+	<link rel="stylesheet" type="text/css" href="css/playlist.css">
 	<link rel="stylesheet/less" type="text/css" href="css/main.less">
     <link rel="shortcut icon" href="">
   </head>
 <body>	
 	<div class="wrapper">
+		<div id="devise" class="devise"></div>
+		<div class="preloader">Loading</div>
 		<header id="header">
 			<div class="container">
 				<div class="header navbar navbar-expand-lg bsnav">
