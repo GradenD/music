@@ -37,6 +37,7 @@
 </div>
 <div class="container">
 	<div class="trending">
-		
+		<h1>OUR TRENDING</h1>
+		<h2>ALBUMS</h1>
 	</div>
 </div>

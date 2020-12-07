@@ -271,7 +271,7 @@ header{
 }
 
 .carousel-caption {
-    bottom: 40%;
+    bottom: 30%;
 }
 
 .slider .carousel .carousel-inner{
@@ -305,6 +305,12 @@ header{
 
 .trending{
 	padding: 7.5rem 0rem;
+}
+
+.trending h1{
+	font-family: Oswald;
+	font-weight: 500;
+    font-style: normal;
 }
 
 
