@@ -90,60 +90,79 @@ $('#trend-left').click(function(){
 
 
 
-
+//плейлист popular
 $(document).ready(function(){
 
     new jPlayerPlaylist({
-    jPlayer: "#jquery_jplayer_1",
-    cssSelectorAncestor: "#jp_container_1"
-    }, [
-    {
-    title:"Cro Magnon Man",
-    mp3:"http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
-    oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg"
-    },
-    {
-    title:"Your Face",
-    mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-    oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
-    },
-    {
-    title:"Cyber Sonnet",
-    mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
-    oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg"
-    },
-    {
-    title:"Tempered Song",
-    mp3:"http://www.jplayer.org/audio/mp3/Miaow-01-Tempered-song.mp3",
-    oga:"http://www.jplayer.org/audio/ogg/Miaow-01-Tempered-song.ogg"
-    },
-    {
-    title:"Hidden",
-    mp3:"http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3",
-    oga:"http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg"
-    },
-    {
-    title:"Lismore",
-    mp3:"http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3",
-    oga:"http://www.jplayer.org/audio/ogg/Miaow-04-Lismore.ogg"
-    },
-    {
-    title:"The Separation",
-    mp3:"http://www.jplayer.org/audio/mp3/Miaow-05-The-separation.mp3",
-    oga:"http://www.jplayer.org/audio/ogg/Miaow-05-The-separation.ogg"
-    },
-    {
-    title:"Thin Ice",
-    mp3:"http://www.jplayer.org/audio/mp3/Miaow-10-Thin-ice.mp3",
-    oga:"http://www.jplayer.org/audio/ogg/Miaow-10-Thin-ice.ogg"
-    }
-    ], {
-    swfPath: "../../dist/jplayer",
-    supplied: "oga, mp3",
-    wmode: "window",
-    useStateClassSkin: true,
-    autoBlur: false,
-    smoothPlayBar: true,
-    keyEnabled: true
+        jPlayer: "#jquery_jplayer_1",
+        cssSelectorAncestor: "#jp_container_1"
+    }, 
+        [
+            {
+                title:"3D - 19",
+                artist:"Obladaet",
+                mp3:"music/Obladaet - 3D19.mp3",   
+                poster: "img/music/obladaet.jpg" 
+            },
+
+            {
+                title:"B.I.D",
+                artist:"Markul",
+                mp3:"music/Markul - B.I.D.mp3",   
+                poster: "img/music/markul.jpg" 
+            },
+
+            {
+                title:"Скалы",
+                artist:"Markul",
+                mp3:"music/Markul - Скалы.mp3",   
+                poster: "img/music/masrk-skall.jpg" 
+            },
+
+            {
+                title:"Mirrors",
+                artist:"MARKUSPHOENIX",
+                mp3:"music/MARKUSPHOENIX - Mirrors.mp3",   
+                poster: "img/music/markus.jpg" 
+            },
+
+            {
+                title:"Let Go",
+                artist:"Beau Young Prince",
+                mp3:"music/Beau Young Prince - Let Go.mp3",   
+                poster: "img/music/let-go.jpg" 
+            },
+
+            {
+                title:"Речная Часть",
+                artist:"Mnogoznaal",
+                mp3:"music/Mnogoznaal - Речная Часть.mp3",   
+                poster: "img/music/mnogo.jpg" 
+            },
+
+            {
+                title:"На Луне",
+                artist:"Pharaoh",
+                mp3:"music/Pharaoh - На Луне.mp3",   
+                poster: "img/music/pharaoh_lune.jpg" 
+            },
+        ], 
+        {
+            supplied: "webmv, ogv, m4v, oga, mp3",
+            wmode: "window",
+            useStateClassSkin: true,
+            autoBlur: false,
+            smoothPlayBar: true,
+            keyEnabled: true
+        }
+    );
+
+    $('#music-list li').click(function() {
+        console.log('click');
+        $(this).append(
+            $('<div>', {
+                'text': 'Текст...'
+            })
+        );
     });
-   });
+});
