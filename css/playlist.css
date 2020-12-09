@@ -221,10 +221,6 @@
     height: 100%
 }
 
-.jp-state-no-volume .jp-volume-controls {
-    display: none
-}
-
 .jp-volume-controls {
 	display: flex;
     display: -ms-flexbox;

@@ -34,7 +34,7 @@
 					<div class="main-menu collapse navbar-collapse">
 						<ul class="navbar-nav nav-margin">
 							<li class="active">
-								<a href="">HOME</a>
+								<a href="/?page=index">HOME</a>
 							</li>
 							<li>
 								<a href="">GALLERY</a>
@@ -50,7 +50,7 @@
 							</li>
 						</ul>
 						<div class="social">
-							<a class="user" href="">
+							<a class="user" href="/?page=log">
 								<span class="icon icon-user">
 									<i class="far fa-user"></i>
 									User

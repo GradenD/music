@@ -123,6 +123,7 @@ a:focus {
 }
 
 .content{
+	position: relative;
 	flex: 1 0 auto;
 	width: 100%;
 }
@@ -130,6 +131,23 @@ a:focus {
 .col-pad {
     padding-right: 0px;
     padding-left: 0px;
+}
+
+.action-form {
+    width: 100%;
+}
+
+.fon {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    min-height: calc(100vh - 440px);
+}
+
+@media (min-width: 991px){
+	.fon {
+   	 background-attachment: fixed;
+	}
 }
 
 /* шапка */
@@ -669,7 +687,9 @@ header{
 
 
 
-/* шапка */
+
+
+/* footer */
 .footer{
 	background: #ffffff;
 	border-top: 1px solid #d2d2d2;
@@ -687,7 +707,7 @@ header{
 	-webkit-justify-content: center;
 	justify-content: center;
 	text-align: center;
-	padding: 4.3rem 0rem;
+	padding: 2.3rem 0rem;
 }
 
 .foot-content ul{
