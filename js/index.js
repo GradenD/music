@@ -99,6 +99,13 @@ $(document).ready(function(){
     }, 
         [
             {
+                title:"Речная Часть",
+                artist:"Mnogoznaal",
+                mp3:"music/Mnogoznaal - Речная Часть.mp3",   
+                poster: "img/music/mnogo.jpg" 
+            },
+
+            {
                 title:"3D - 19",
                 artist:"Obladaet",
                 mp3:"music/Obladaet - 3D19.mp3",   
@@ -131,13 +138,6 @@ $(document).ready(function(){
                 artist:"Beau Young Prince",
                 mp3:"music/Beau Young Prince - Let Go.mp3",   
                 poster: "img/music/let-go.jpg" 
-            },
-
-            {
-                title:"Речная Часть",
-                artist:"Mnogoznaal",
-                mp3:"music/Mnogoznaal - Речная Часть.mp3",   
-                poster: "img/music/mnogo.jpg" 
             },
 
             {

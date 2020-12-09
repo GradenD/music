@@ -1,0 +1,354 @@
+/* news */
+.heading-news{
+	width: 100%;
+	height: 350px;
+	padding: 0px 0px;
+	text-align: left;
+	background: #f6f6f8;
+    border-top: 1px solid #e1e1e1;
+}
+
+.heading-news .info{
+    padding: 115px 0px;
+}
+
+.heading-news .head-img{
+	background: no-repeat right/100% url(/img/blog.png);
+    background-size: cover;
+}
+
+.news{
+	display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+	justify-content: space-between;
+	width: 100%;
+	padding: 50px 0px;
+}
+
+.news .news-content{
+	width: 65%;
+}
+
+.news .news-content .news-columns{
+	-webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+}
+
+.news .news-content .news-columns .news-items{
+	position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+	flex-direction: column;
+	page-break-inside: avoid;
+	break-inside: avoid;
+	background: #ffffff;
+	margin-bottom: 30px;
+}
+
+.news-items img{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.news-items .news-body{
+	width: 100%;
+	padding: 15px 35px;
+	padding-bottom: 25px;
+}
+
+.news-items .news-body .head-items{
+	width: 100%;
+}
+
+.news-items .news-body .head-items h2{
+	font-size: 1rem;
+    color: #fff;
+    background: #000000;
+	width: 50%;
+	padding: 5px;
+    text-align: center;
+	margin-bottom: 25px;
+}
+
+.news-items .news-body .head-items h1{
+	font-size: 1.2rem;
+	color: #333333;
+	margin-bottom: 15px;
+}
+
+.news-items .news-body .head-items .name{
+	font-size: 1rem;
+	color: #cccccc;
+}
+
+.news-items .news-body .text{
+	display: flex;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	padding: 20px 0px;
+	padding-bottom: 0px;
+}
+
+.news-items .news-body .text p{
+	font-size: 1rem;
+	color: #777777;
+	font-weight: 400;
+}
+
+.news-items .news-body .foot-items{
+	display: flex;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+    -webkit-justify-content: space-between;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+.news-items .news-body .foot-items p{
+	font-size: 1rem;
+	color: #777777;
+	font-weight: 400;
+}
+
+.news-items .news-body .foot-items .social i{
+	cursor: pointer;
+	margin-left: 15px;
+}
+
+.load-more{
+	text-align: center;
+}
+
+.btn-send {
+	margin: 15px 0px;
+	padding: 5px;
+    border-radius: 0px;
+    background: #959595;
+	border: 0px solid #ced4da;
+	font-size: 1rem;
+    color: #ffffff;
+    width: 130px;
+}
+
+.news .news-social{
+	width: 35%;
+	padding-left: 30px;
+	display: flex;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+}
+
+.form-control{
+	background-color: #fff;
+	border: none;
+}
+
+.form-control:focus {
+    border-color: #ffffff;
+    box-shadow: none;
+	outline:none;
+}
+
+.news .news-social .social-content{
+	margin-bottom: 30px;
+} 
+
+.news-search input::-moz-placeholder { color: #b7b7b7; }
+.news-search input::-webkit-input-placeholder { color: #b7b7b7; }
+
+.news-search .input-group-text {
+	color: #ffffff; 
+	background-color: #999999;
+    border: 0px solid #ced4da; 
+}
+
+.news .news-social  .recent-posts{
+	display: flex;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.recent-posts .post-head{
+	width: 100%;
+	background: #ebebeb;
+	color: #000000;
+	text-align: center;
+	padding: 5px 5px;
+}
+
+.post-head h1{
+	font-size: 1.2rem;
+	letter-spacing: 5px;
+	margin-bottom: 0rem;
+}
+
+.recent-posts .post-body{
+	display: flex;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	background: #ffffff;
+	padding: 15px;
+	width: 100%;
+}
+
+.post-body .post{
+	display: flex;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.post-body .post .post-img{
+	width: 40%;
+	height: auto;
+}
+
+.post-img img{
+	width: 100%;
+	height: 100%;
+}
+
+.post-body .post .post-title{
+	display: flex;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-justify-content: space-between;
+    justify-content: space-between;
+	width: 60%;
+	padding-left: 10px;
+}
+
+.post-title h1{
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: #3d3d3d;
+	margin-bottom: 0.5rem;
+}
+
+
+.post-title p{
+	font-size: 1rem;
+	line-height: 1;
+	color: #777777;
+	font-weight: 400;
+}
+
+.popular-tags .tags-body{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	flex-flow: row wrap;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+}
+
+.popular-tags .tags-body .tags{
+	width: auto;
+	border: 1px solid #eeeeee;
+	padding: 10px 10px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.popular-tags .tags-body .tags-avtive{
+	background: #000000;
+	border: 1px solid #000000;
+}
+
+.tags p{
+	font-size: 1rem;
+	line-height: 1;
+	color: #9c9c9c;
+	font-weight: 400;
+}
+
+.tags-avtive p{
+	color: #ffffff;
+}
+
+.inst .inst-body{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	flex-flow: row wrap;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+}
+
+
+.inst .inst-body img{
+	width: 32%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+@media (max-width: 991px){
+
+	.heading-news .info {
+    	padding: 30px 0px; 
+	}
+
+	.heading-news h5 {
+		font-size: 3rem;
+		color: #000000;
+		background: none;
+		padding: 0px 0px;
+	}
+
+	.news {
+		flex-direction: column-reverse;
+		padding: 50px 0px;
+	}
+
+	.news .news-content {
+		width: 100%;
+	}
+
+	.news .news-social {
+		width: 100%;
+		padding-left: 0px;
+		flex-flow: row wrap;
+	}
+
+	.news .news-social .news-search{
+		height: 50px;
+	}
+
+	.news .news-social .news-search input{
+		height: 100%;
+		font-size: 1.2rem;
+	}
+
+}
+
+@media (max-width: 767px){
+
+	.news .news-content .news-columns {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+		-webkit-column-gap: 1.25rem;
+		-moz-column-gap: 1.25rem;
+		column-gap: 1.25rem;
+		orphans: 1;
+		widows: 1;
+	}
+
+}

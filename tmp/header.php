@@ -37,16 +37,13 @@
 								<a href="/?page=index">HOME</a>
 							</li>
 							<li>
-								<a href="">GALLERY</a>
+								<a href="/?page=news">NEWS</a>
 							</li>
 							<li>
-								<a href="">NEWS</a>
+								<a href="/?page=gallery">GALLERY</a>
 							</li>
 							<li>
-								<a href="">ALBUMS</a>
-							</li>
-							<li>
-								<a href="">BLOG</a>
+								<a href="">MUSIC</a>
 							</li>
 						</ul>
 						<div class="social">
