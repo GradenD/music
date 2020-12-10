@@ -172,7 +172,7 @@
                 <h2>Tracks popular on DarkMusic right now</h2>
             </div>
             <div class="chart-but">
-                <button id="relize-load" class="btn-send"> LOAD MORE </button>
+                <button id="chart-load" class="btn-send"> LOAD MORE </button>
             </div>
         </div>
         <div class="chart-body">
