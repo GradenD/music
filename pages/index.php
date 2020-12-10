@@ -8,7 +8,7 @@
   		</ol>
   		<div class="carousel-inner">
     		<div class="carousel-item active">
-      			<img class="d-block w-100" data-src="img/slider-ndex/slide-1.jpg" alt="First slide">
+      			<img class="d-block w-100" data-src="img/slider-ndex/slide-1.jpg">
 				<div class="carousel-caption d-none d-md-block">
     				<p>
 						cantus find the music your Choice & discover our new tracks.
@@ -17,7 +17,7 @@
   				</div>
 			</div>
 			<<div class="carousel-item">
-      			<img class="d-block w-100" data-src="img/slider-ndex/slide-1.jpg" alt="First slide">
+      			<img class="d-block w-100" data-src="img/slider-ndex/slide-1.jpg">
 				<div class="carousel-caption d-none d-md-block">
     				<p>
 						cantus find the music your Choice & discover our new tracks.

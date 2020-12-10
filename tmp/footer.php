@@ -5,19 +5,16 @@
 				<div class="foot-content">
 					<ul>
 						<li class="active">
-							<a href="">HOME</a>
+							<a href="/?page=index">HOME</a>
 						</li>
 						<li>
-							<a href="">GALLERY</a>
+							<a href="/?page=news">NEWS</a>
 						</li>
 						<li>
-							<a href="">NEWS</a>
+							<a href="/?page=gallery">GALLERY</a>
 						</li>
 						<li>
-							<a href="">ALBUMS</a>
-						</li>
-						<li>
-							<a href="">BLOG</a>
+							<a href="/?page=music">MUSIC</a>
 						</li>
 					</ul>
 					<p>Copyright © 2009–2016 <span>cantus</span> © their respective owners. Shipped from Salem, Mass. USA.</p>

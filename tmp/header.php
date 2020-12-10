@@ -43,7 +43,7 @@
 								<a href="/?page=gallery">GALLERY</a>
 							</li>
 							<li>
-								<a href="">MUSIC</a>
+								<a href="/?page=music">MUSIC</a>
 							</li>
 						</ul>
 						<div class="social">
