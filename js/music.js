@@ -84,3 +84,16 @@ $('#popular-left').click(function(){
         });
     }
 });
+
+//загрузка блока новых релизов
+$('#relize-load').click(function(){
+	$.ajax({
+	  	type: "POST",
+	  	url: 'pages/new-relaze.php',
+	  	success: function(data) {
+            for (let i = 0; i < 2; i++) {
+                $('#relize').append(data);
+            }
+	  	}
+	});
+});

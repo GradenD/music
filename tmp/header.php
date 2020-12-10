@@ -14,7 +14,6 @@
 	<link rel="stylesheet" type="text/css" href="css/bsnav.min.css">
 	<link rel="stylesheet" type="text/css" href="font/font.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/audio-touch.css"> -->
 	<link rel="stylesheet/less" type="text/css" href="css/main.less">
     <link rel="shortcut icon" href="">
   </head>

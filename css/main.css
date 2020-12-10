@@ -1390,6 +1390,30 @@ header{
 .new-relize{
 	width: 100%;
 	padding: 1rem 0rem;
+	border-bottom: 2px solid #dfdfdf;
+	padding-bottom: 0rem;
+	margin-bottom: 2rem;
+}
+
+.new-relize .relize-head{
+	display: flex;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.new-relize .relize-head .relize-but{
+	text-align: right;
+}
+
+.new-relize .relize-head .relize-but .btn-send {
+    border-radius: 0px;
+    background: #959595;
+    border: 0px solid #959595;
+    color: #ffffff;
+    width: 125px;
 }
 
 .new-relize h1 {
@@ -1442,12 +1466,63 @@ header{
 	.new-relize .relize-content .relize-column{
 		width: 45%;
 	}
+
+	.new-relize .relize-head{
+		flex-direction: column;
+	}
+	
+	.new-relize .relize-head .relize-but{
+		text-align: left;
+	}
 }
 
 @media (max-width: 480px){
 	.new-relize .relize-content .relize-column{
 		width: 100%;
 	}
+}
+
+
+
+.music-chart{
+	width: 100%;
+	padding: 1rem 0rem;
+	border-bottom: 2px solid #dfdfdf;
+	padding-bottom: 0rem;
+	margin-bottom: 2rem;
+}
+
+.music-chart .chart-head{
+	display: flex;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.nmusic-chart .chart-head .chart-but{
+	text-align: right;
+}
+
+.nmusic-chart .chart-head .chart-but .btn-send {
+    border-radius: 0px;
+    background: #959595;
+    border: 0px solid #959595;
+    color: #ffffff;
+    width: 125px;
+}
+
+.music-chart h1 {
+    font-family: Oswald;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+
+.chart-body{
+	width: 100%;
+	padding: 1.5rem;
 }
 
 

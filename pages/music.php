@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="css/music.css">
+<link rel="stylesheet" type="text/css" href="css/audio-touch.css"> 
 <div class="heading">
     <div class="container">
         <h1>Browse & search DarkMusic </h1>
@@ -94,9 +95,16 @@
 </div>
 <div class="container">
     <div class="new-relize">
-        <h1>NEW RELEASES</h1>
-        <h2>New tracks, albums and compilations</h2>
-        <div class="relize-content">
+        <div class="relize-head">
+            <div class="title">
+                <h1>NEW RELEASES</h1>
+                <h2>New tracks, albums and compilations</h2>
+            </div>
+            <div class="relize-but">
+                <button id="relize-load" class="btn-send"> LOAD MORE </button>
+            </div>
+        </div>
+        <div id="relize" class="relize-content">
             <div class="relize-column">
                 <img data-src="img/music/markul.jpg">
                 <div class="info">
@@ -105,21 +113,21 @@
                 </div>
             </div>
             <div class="relize-column">
-                <img src="img/music/markus.jpg">
+                <img data-src="img/music/markus.jpg">
                 <div class="info">
                     <h1>MARKUSPHOENIX- MIRRORS</h1>
                     <p>Album</p>
                 </div>
             </div>
             <div class="relize-column">
-                <img src="img/music/let-go.jpg">
+                <img data-src="img/music/let-go.jpg">
                 <div class="info">
                     <h1>Beau Young Prince - Let Go </h1>
                     <p>Singl</p>
                 </div>
             </div>
             <div class="relize-column">
-                <img src="img/music/pharaoh_lune.jpg">
+                <img data-src="img/music/pharaoh_lune.jpg">
                 <div class="info">
                     <h1>Pharaoh - На луне</h1>
                     <p>Singl</p>
@@ -133,7 +141,7 @@
                 </div>
             </div>
             <div class="relize-column">
-                <img src="img/music/obladaet.jpg">
+                <img data-src="img/music/obladaet.jpg">
                 <div class="info">
                     <h1>Obladaet- 3D19</h1>
                     <p>Album</p>
@@ -147,7 +155,7 @@
                 </div>
             </div>
             <div class="relize-column">
-                <img src="img/music/markus.jpg">
+                <img data-src="img/music/markus.jpg">
                 <div class="info">
                     <h1>MARKUSPHOENIX- MIRRORS</h1>
                     <p>Album</p>
@@ -156,5 +164,25 @@
         </div>
     </div>
 </div>
+<div class="container">
+    <div class="music-chart">
+        <div class="chart-head">
+            <div class="title">
+                <h1>DARKMUSIC CHART </h1>
+                <h2>Tracks popular on DarkMusic right now</h2>
+            </div>
+            <div class="chart-but">
+                <button id="relize-load" class="btn-send"> LOAD MORE </button>
+            </div>
+        </div>
+        <div class="chart-body">
+            <div class="row">
+                <div class="col-12 col-lg-6"></div>
+                <div class="col-12 col-lg-6"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<script src="js/audio-touch.js"></script> 
 <script type="text/javascript" src='js/music.js'></script>
