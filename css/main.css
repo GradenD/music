@@ -1215,7 +1215,8 @@ header{
 
 .popular-songs{
 	padding: 3.5rem 0rem;
-    padding-bottom: 1.5rem;
+	padding-bottom: 0rem;
+    margin-bottom: 2rem;
     border-bottom: 2px solid #dfdfdf;
 }
 
@@ -1384,6 +1385,70 @@ header{
 	}
 }
 
+
+
+.new-relize{
+	width: 100%;
+	padding: 1rem 0rem;
+}
+
+.new-relize h1 {
+    font-family: Oswald;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+
+.new-relize .relize-content{
+	display: flex;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	padding: 2rem 0rem;
+	padding-bottom: 0rem;
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+
+.new-relize .relize-content .relize-column{
+	width: 23%;
+	margin-bottom: 1rem;
+}
+
+.relize-column img{
+	width: 100%;
+	height: 150px;
+}
+
+.relize-column .info{
+	display: flex;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0.5rem 0rem;
+}
+
+.relize-column .info h1 {
+	letter-spacing: 0px;
+	margin-bottom: .3rem;
+}
+
+@media (max-width: 991px){
+	.new-relize .relize-content .relize-column{
+		width: 45%;
+	}
+}
+
+@media (max-width: 480px){
+	.new-relize .relize-content .relize-column{
+		width: 100%;
+	}
+}
 
 
 
