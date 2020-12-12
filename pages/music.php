@@ -171,14 +171,38 @@
                 <h1>DARKMUSIC CHART </h1>
                 <h2>Tracks popular on DarkMusic right now</h2>
             </div>
-            <div class="chart-but">
-                <button id="chart-load" class="btn-send"> LOAD MORE </button>
-            </div>
+            <div class="chart-but"></div>
         </div>
-        <div class="chart-body">
-            <div class="row">
-                <div class="col-12 col-lg-6"></div>
-                <div class="col-12 col-lg-6"></div>
+        <div id="chart" class="chart-body">
+            <div class="items-chart col-lg-offset-3">
+				<p>Obladaet - 3D19</p>
+                <audio preload="auto" controls>
+					<source src="music/Obladaet - 3D19.mp3">
+				</audio>
+            </div> 
+            <div class="items-chart col-lg-offset-3">
+				<p>Beau Young Prince - Let Go</p>
+                <audio preload="auto" controls>
+					<source src="music/Beau Young Prince - Let Go.mp3">
+				</audio>
+            </div>
+            <div class="items-chart col-lg-offset-3">
+				<p>Mnogoznaal - Речная Часть</p>
+                <audio preload="auto" controls>
+					<source src="music/Mnogoznaal - Речная Часть.mp3">
+				</audio>
+            </div>
+            <div class="items-chart col-lg-offset-3">
+				<p>MARKUSPHOENIX - Mirrors</p>
+                <audio preload="auto" controls>
+					<source src="music/MARKUSPHOENIX - Mirrors.mp3">
+				</audio>
+            </div>
+            <div class="items-chart col-lg-offset-3">
+				<p>Pharaoh - На Луне</p>
+                <audio preload="auto" controls>
+					<source src="music/Pharaoh - На Луне.mp3">
+				</audio>
             </div>
         </div>
     </div>

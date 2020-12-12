@@ -75,6 +75,11 @@ a:focus {
     outline: none;
 }
 
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 .preloader {
 	display: block;
 	position: fixed;
@@ -232,7 +237,7 @@ header{
 	input.search-form:hover:-ms-input-placeholder { color: #b7b7b7; } /* IE 10+ */
 
 	input.search-form:hover {
-   			width: 180px;
+   			width: 280px;
 	}
 }
 
@@ -248,6 +253,12 @@ header{
 
 	.header .main-menu  .social{
 		margin-top: 15px;
+		width: 100%;
+	}
+
+	.header .main-menu  .social .search{
+		width: 100%;
+		margin-top: 1rem;
 	}
 
 	.header .main-menu li{
@@ -271,7 +282,7 @@ header{
 
 @media (max-width: 767px){
 	input.search-form, input.search-form:hover {
-		width: 180px;
+		width: 90%;
 		border: 0px;
 	}
 }
@@ -1521,8 +1532,26 @@ header{
 }
 
 .chart-body{
+	display: flex;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
 	width: 100%;
 	padding: 1.5rem;
+}
+
+.chart-body .items-chart{
+	width: 47%;
+	margin-bottom: 1rem;
+}
+
+@media (max-width: 991px){
+	.chart-body .items-chart{
+		width: 100%;
+		margin-bottom: 1rem;
+	}
 }
 
 
