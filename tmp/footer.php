@@ -5,7 +5,7 @@
 				<div class="foot-content">
 					<ul>
 						<li class="active">
-							<a href="/?page=index">HOME</a>
+							<a href="/?page=index">HOME </a>
 						</li>
 						<li>
 							<a href="/?page=news">NEWS</a>

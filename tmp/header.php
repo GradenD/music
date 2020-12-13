@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <?php require_once 'library/main.php'; ?>
+	<?php require_once 'library/check.php'; ?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -45,12 +47,21 @@
 							</li>
 						</ul>
 						<div class="social">
+							<?php if($auth):?>
+							<a class="user" href="/?page=profile">
+								<span class="icon icon-user">
+									<i class="far fa-user"></i>
+									<?=$usrName?>
+								</span>
+							</a>
+							<?php else:?>
 							<a class="user" href="/?page=log">
 								<span class="icon icon-user">
 									<i class="far fa-user"></i>
 									User
 								</span>
 							</a>
+							<?php endif;?>
 							<div class="search">
                              	<form role="form">
                             	 	<input type="text" class="search-form" autocomplete="off" placeholder="Track, album, artist, podcast">

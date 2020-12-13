@@ -5,7 +5,7 @@
     if(isset($_COOKIE['email']) && isset($_COOKIE['SESSID'])){
         $email=$_COOKIE['email'];
         $session=$_COOKIE['SESSID'];
-        $result=$db->query("SELECT id FROM user WHERE email='$email'");
+        $result=$db->query("SELECT * FROM user WHERE email='$email'");
         if($result){
             $usr=$result->fetch_assoc();
             if(!empty($usr)){
@@ -22,5 +22,6 @@
     if($auth){
         $usrId=$usr['id'];
         $usrMail=$usr['email'];
+        $usrName=$usr['name'];      
     }
 ?>

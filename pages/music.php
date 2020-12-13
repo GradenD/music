@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="css/audio-touch.css"> 
 <div class="heading">
     <div class="container">
-        <h1>Browse & search DarkMusic </h1>
+        <h1>Browse & search DarkMusic</h1>
     </div>
 </div>
 <div class="container">
