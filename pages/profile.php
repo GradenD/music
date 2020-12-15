@@ -18,19 +18,21 @@
 							</div>
 						</div>
 						<div class="block-config">
-							<div id="ed-pr" class="param">
+							<div id="ed-pr" class="param" formaction="/action/edit-profile.php">
 								<p><i class="fas fa-edit" aria-hidden="true"></i> Edit profile</p>
 							</div>
 						</div>
 						<div class="block-config">
-							<div id="password" class="param">
+							<div id="password" class="param" formaction="/action/edit-password.php">
 								<p><i class="fas fa-pencil-alt" aria-hidden="true"></i> Change password</p>
 							</div>
 						</div>
 						<div class="block-config">
-							<div class="param">
-								<p><i class="fas fa-door-open" aria-hidden="true"></i> Sign out</p>
-							</div>
+							<a href="library/logout.php">
+								<div class="param" formaction="/action/logout.php">
+									<p><i class="fas fa-door-open" aria-hidden="true"></i> Sign out</p>
+								</div>
+							</a>
 						</div>
 					</div>
                 </div>
@@ -39,5 +41,4 @@
         <div id="info-user" class="info-user"></div> 
     </div>
 </div>
-
 <script type="text/javascript" src='js/profile.js'></script>

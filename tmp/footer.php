@@ -24,6 +24,7 @@
 	</div> 	
 	<script type="text/javascript" src='js/bsnav.min.js'></script>		
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src='js/moment-with-locales.min.js'></script>
 	<script type="text/javascript" src='js/less.min.js'></script>
 	<script type="text/javascript" src='js/main.js'></script>
   </body>

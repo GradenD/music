@@ -12,6 +12,7 @@
 	<script type="text/javascript" src='js/jplayer.playlist.min.js'></script>
 	<script type="text/javascript" src='js/fontawesome.js'></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bsnav.min.css">
 	<link rel="stylesheet" type="text/css" href="font/font.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">

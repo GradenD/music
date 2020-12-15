@@ -6,7 +6,7 @@
             <img data-src="img/logo.png">
         </div>
         <h1>REGISTRATION</h1>
-        <form class="action-form" method="post" action="#">
+        <form id="form-auth" class="action-form" method="post" action="javascript:void(0);">
             <div class="row">
                 <div class="col-12 col-pad">
                     <div class="form-group">
@@ -40,13 +40,14 @@
 						<label for="password" class="cols-sm-2 control-label">Confirm Password</label>
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fas fa-lock fa-lg" aria-hidden="true"></i></span>
-							<input type="password" required="" class="form-control" name="password" id="confirm" placeholder="Confirm your Password">
+							<input type="password" required="" class="form-control" name="confirm" id="confirm" placeholder="Confirm your Password">
 						</div>
 					</div>
                 </div>
                 <div class="col-12 col-pad">
                     <div class="form-but">
-						<button id="log" class="btn btn-primary btn-lg btn-block login-button" type="submit">REGISTRATION</button>
+                        <button id="log" class="btn btn-primary btn-lg btn-block login-button" type="submit">REGISTRATION</button>
+                        <p style="color: red;" id="php-otvet"></p>
                         <a href="/?page=log"><p>Already have an account? Sign in!</p></a>
 					</div>
                 </div>
@@ -54,3 +55,4 @@
         </form>
     </div>
 </div>
+<script type="text/javascript" src='js/register.js'></script>

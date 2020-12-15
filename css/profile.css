@@ -2,6 +2,17 @@ header {
     box-shadow: 0px 0px 0px rgba(5, 12, 22, 0.54);
 }
 
+a {
+    color: #212529;;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover,
+a:focus {
+    color:  #212529;;
+}
+
 .user-form {
     display: flex;
     display: -ms-flexbox;
@@ -128,4 +139,93 @@ header {
 .info-footer {
     float: left;
     align-self: end;
+}
+
+.bio-input{
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 0rem;
+}
+
+.form-group .input-group {
+    border: 1px solid #ebebeb;
+}
+
+.form-group span {
+    display: flex;
+    align-items: center;
+    background: #ebebeb;
+    padding: .275rem .35rem;
+}
+
+.form-control {
+    background-color: #fff;
+    border: none;
+}
+
+.btn-send{
+    margin-bottom: 0rem;
+}
+
+
+@media (max-width: 991px) {
+
+    .column {
+        width: 100%;
+    }
+
+    .bio-input{
+        padding-bottom: 1rem;
+        padding-right: 0rem;
+    }
+
+    .user-form {
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .user-mb{
+        margin: 0px auto;
+        width: auto;
+    }
+
+    .user-head {
+        float: left;
+        width: 50%;
+    }
+
+    .user-head img {
+        Width: 85%;
+        Height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .user-body {
+        padding-top: 0rem;
+        float: left;
+    }
+
+    .config-user{
+        margin-bottom: 2rem;
+    }
+
+    .info-user{
+        margin-left: 0rem;
+    }
+
+    .info-head{
+        margin-bottom: 3rem;
+    }
+
+    .info-boddy {
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
 }
