@@ -1,3 +1,8 @@
+<?php 
+    require_once '../config/db.php';
+	require_once '../library/check.php'; 
+	require_once '../action/user-info.php'; 
+?>
 <div class="info-head">
     <h1>Edit Password</h1>
 </div>
@@ -6,19 +11,19 @@
         <div class="column">
             <div class="bio-row bio-input">
                 <div class="form-group">
-				    <label for="password" class="cols-sm-2 control-label">Password</label>
+				    <label for="password" class="cols-sm-2 control-label">New Password</label>
 				    <div class="input-group">
 					    <span class="input-group-addon"><i class="fas fa-lock fa-lg" aria-hidden="true"></i></span>
-					    <input type="password" required="" class="form-control" name="password" id="password" placeholder="Enter your Password">
+					    <input type="password" required="" class="form-control" name="new-password" id="new-password" placeholder="Enter Your New Password">
 				    </div>
                 </div>
             </div>
             <div class="bio-row bio-input">
                 <div class="form-group">
-				    <label for="password" class="cols-sm-2 control-label">Confirm Password</label>
+				    <label for="password" class="cols-sm-2 control-label">Confirm New Password</label>
 				    <div class="input-group">
 					    <span class="input-group-addon"><i class="fas fa-lock fa-lg" aria-hidden="true"></i></span>
-					    <input type="password" required="" class="form-control" name="password" id="confirm" placeholder="Confirm your Password">
+					    <input type="password" required="" class="form-control" name="confirm" id="confirm" placeholder="Confirm Your New Password">
 				    </div>
                 </div>
             </div>
@@ -26,19 +31,21 @@
         <div class="column">
             <div class="bio-row bio-input">
                 <div class="form-group">
-				    <label for="new-password" class="cols-sm-2 control-label">Confirm New Password</label>
+				    <label for="new-password" class="cols-sm-2 control-label">Password</label>
 				    <div class="input-group">
 					    <span class="input-group-addon"><i class="fas fa-lock fa-lg" aria-hidden="true"></i></span>
-					    <input type="password" required="" class="form-control" name="new-password" id="confirm" placeholder="Confirm your New Password">
+					    <input type="password" required="" class="form-control" name="password" id="password" placeholder="Your Password">
 				    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="info-footer">
+        <p style="color: red;" id="php-otvet"></p>
 	    <button id="save" class="btn-send" type="submit"> 
 		    <i class="fab fa-telegram-plane" aria-hidden="true"></i> Save changes
 	    </button>
     </div>
 </form>
 <div class="info-footer"></div>
+<script type="text/javascript" src='js/edit-password.js'></script>

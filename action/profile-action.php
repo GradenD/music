@@ -1,33 +1,38 @@
+<?php 
+    require_once '../config/db.php';
+	require_once '../library/check.php'; 
+	require_once '../action/user-info.php'; 
+?>
 <div class="info-head">
     <h1>Bio Graph</h1>
 </div>
 <div class="info-boddy">
 	<div class="column">
 		<div class="bio-row">
-			<p>First Name: Camila</p>
+			<p>First Name: <?=$usrName?> </p>
 		</div>
 		<div class="bio-row">
-			<p>Country: Australia</p>
+			<p>Country: <?=$usrCountry?> </p>
 		</div>
 		<div class="bio-row">
-			<p>Phone: (12) 03 4567890</p>
+			<p>Phone: <?=$usrPhone?> </p>
 		</div>
 		<div class="bio-row">
-			<p>Skype: live:.cid.d1924dba0ec65b2b</p>
+			<p>Skype: <?=$usrSkype?> </p>
 		</div>
 	</div>
 	<div class="column">
 	    <div class="bio-row">
-		    <p>Last Name: Smith</p>
+		    <p>Last Name: <?=$usrLast?> </p>
 		</div>
 		<div class="bio-row">
-			<p>Birthday: 13 July 1998</p>
+			<p>Birthday: 13 July 1998 </p>
 		</div>
 		<div class="bio-row">
-			<p>Email: jsmith@flatlab.com</p>
+			<p>Email: <?=$usrMail?> </p>
 		</div>
 		<div class="bio-row">
-			<p>Discord: The Gallywix Community</p>
+			<p>Instagram: <?=$usrInstagram?> </p>
 		</div>
 	</div>
 </div>

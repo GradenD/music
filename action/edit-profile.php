@@ -1,3 +1,8 @@
+<?php 
+    require_once '../config/db.php';
+	require_once '../library/check.php'; 
+	require_once '../action/user-info.php'; 
+?>
 <div class="info-head">
     <h1>Edit profile</h1>
 </div>
@@ -9,7 +14,7 @@
 				    <label for="username" class="cols-sm-2 control-label">Your Name</label>
 				    <div class="input-group">
 					    <span class="input-group-addon"><i class="fas fa-user" aria-hidden="true"></i></span>
-					    <input type="text" required="" class="form-control" name="username" id="username" placeholder="Enter your Name">
+					    <input type="text" required="" class="form-control" value="<?=$usrName?>" name="username" id="username" placeholder="Enter your Name">
 				    </div>
 			    </div>
             </div>
@@ -18,7 +23,7 @@
                     <label for="date" class="cols-sm-2 control-label">Your Last Name</label>
 				    <div class="input-group">
 					    <span class="input-group-addon"><i class="fas fa-user" aria-hidden="true"></i></span>
-					    <input type="text" required="" class="form-control" name="LastName" id="LastName" placeholder="Enter your Last Name">
+					    <input type="text" required="" class="form-control" value="<?=$usrLast?>" name="LastName" id="LastName" placeholder="Enter your Last Name">
 				    </div>
 			    </div>
             </div>
@@ -37,7 +42,7 @@
 				<label for="email" class="cols-sm-2 control-label">Your Email</label>
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
-					<input type="text" required="" class="form-control" name="email" id="email" placeholder="Enter your Email">
+					<input type="text" required="" class="form-control" value="<?=$usrMail?>" name="email" id="email" placeholder="Enter your Email">
 				</div>
 			</div>
         </div>
@@ -47,7 +52,7 @@
 				    <label for="phone" class="cols-sm-2 control-label">Phone</label>
 				    <div class="input-group">
 					    <span class="input-group-addon"><i class="fas fa-mobile" aria-hidden="true"></i></span>
-					    <input type="text" required="" class="form-control" name="phone" id="phone" placeholder="Enter your Phone">
+					    <input type="text" required="" class="form-control" value="<?=$usrPhone?>" name="phone" id="phone" placeholder="Enter your Phone">
 				    </div>
 			    </div>
             </div>
@@ -55,32 +60,33 @@
 				<label for="country" class="cols-sm-2 control-label">Your Country</label>
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fas fa-globe-americas"></i></span>
-					<input type="text" required="" class="form-control" name="country" id="country" placeholder="Enter your Country">
+					<input type="text" required="" class="form-control" value="<?=$usrCountry?>" name="country" id="country" placeholder="Enter your Country">
 				</div>
             </div>
             <div class="form-group bio-input">
 				<label for="skype" class="cols-sm-2 control-label">Your Skype</label>
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fab fa-skype" aria-hidden="true"></i></span>
-					<input type="text" required="" class="form-control" name="skype" id="skype" placeholder="Enter your Skype">
+					<input type="text" required="" class="form-control" value="<?=$usrSkype?>" name="skype" id="skype" placeholder="Enter your Skype">
 				</div>
             </div>
             <div class="form-group bio-input">
 				<label for="instagram" class="cols-sm-2 control-label">Your Instagram</label>
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fab fa-instagram"></i></span>
-					<input type="text" required="" class="form-control" name="instagram" id="instagram" placeholder="Enter your Instagram">
+					<input type="text" required="" class="form-control" value="<?=$usrInstagram?>" name="instagram" id="instagram" placeholder="Enter your Instagram">
 				</div>
 			</div>
         </div>
     </div>
     <div class="info-footer">
+		<p style="color: red;" id="php-otvet"></p>
 	    <button id="save" class="btn-send" type="submit"> 
 		    <i class="fab fa-telegram-plane" aria-hidden="true"></i> Save changes
 	    </button>
     </div>
 </form>
-	
+<script type="text/javascript" src='js/edit-profile.js'></script>	
 <script type="text/javascript" src='js/bootstrap-datetimepicker.min.js'></script>
 <script>
     $(function () {
