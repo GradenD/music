@@ -2,29 +2,52 @@
 <div class="slider">
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   		<ol class="carousel-indicators">
-    		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		  	<?php
+        		$k=1;
+        		while($row = news_index::getOnce($k)){
+            		while($set = $row->fetch_object()){
+    		?>
+			<?php 
+				if ($k == 1){
+			?>
+    		<li data-target="#carouselExampleIndicators" data-slide-to="<?php $k;?>" class="active"></li>
+			<?php }else{ ?>
+    			<li data-target="#carouselExampleIndicators" data-slide-to="<?php $k;?>"></li>
+			<?php } 
+
+            		}
+            		$k++;
+       			}
+    		?>
   		</ol>
   		<div class="carousel-inner">
-    		<div class="carousel-item active">
-      			<img class="d-block w-100" data-src="img/slider-ndex/slide-1.jpg">
+		  	<?php
+        		$k=1;
+        		while($row = news_index::getOnce($k)){
+					echo "<div class='row'></div>";
+            		while($set = $row->fetch_object()){
+    		?>
+			<?php 
+				if ($k == 1){
+			?>
+    			<div class="carousel-item active">
+			<?php }else { ?>
+				<div class="carousel-item">
+			<?php } ?>
+
+      			<img class="d-block w-100" data-src="img/slider-ndex/<?=$set->img?>">
 				<div class="carousel-caption d-none d-md-block">
     				<p>
-						cantus find the music your Choice & discover our new tracks.
-						Connect directly with your favorite band member.
+						<?=$set->text?>
 					</p>
   				</div>
 			</div>
-			<<div class="carousel-item">
-      			<img class="d-block w-100" data-src="img/slider-ndex/slide-1.jpg">
-				<div class="carousel-caption d-none d-md-block">
-    				<p>
-						cantus find the music your Choice & discover our new tracks.
-						Connect directly with your favorite band member.
-					</p>
-  				</div>
-			</div>
+
+			<?php 
+					}
+					$k++;
+				}
+			?>
   		</div>
   		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
