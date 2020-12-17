@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('.preloader').fadeOut();
 
-	$('.carousel').carousel({
+	$('.carouselExampleIndicators').carousel({
 		interval: 5000
 	});
 

@@ -1,0 +1,100 @@
+<div class="container">
+	<div class="trending">
+		<h1>OUR TRENDING</h1>
+		<h2>Albums</h1>
+		<div id="trend-albums" class="trend-gallery carousel slide" data-ride="carousel">
+			<div class="conrol">
+				<a class="" href="#trend-albums" role="button" data-slide="prev">
+					<div id="trend-left" class="control-row">
+						<i class="fas fa-chevron-left"></i>
+					</div>
+				</a>
+				<a class="" href="#trend-albums" role="button" data-slide="next">
+					<div id="trend-right" class="control-row">
+						<i class="fas fa-chevron-right"></i>
+					</div>
+				</a>
+			</div>
+			<div class="albums carousel-inner">
+				<?php
+					global $db;
+        			$q = $db->query("SELECT * FROM album ORDER BY listening DESC LIMIT 16;");
+        			if($q) {
+            			$arr = [];
+            			$i=0;
+            			while($r=$q->fetch_assoc()){
+                			$arr[$i]=$r;
+                			$i++;
+						}
+						$k = 1;
+						$two = 0;
+						$thre = 0;
+						$one = 0;
+						foreach($arr as $key=>$value){
+							if ($k == 0){
+								echo "<div class=\"carousel-item\">";
+								echo "<div class=\"trend-column\">";
+								echo $k;
+							}
+							if ($k%2==0){ //каждый второй шаг
+								echo "</div>";
+								echo $k;
+							}
+							if ($k%3==0){ //каждый второй шаг
+								echo "<div class=\"trend-column\">";
+								echo $k;
+							}
+							if ($k%8==0){ //каждый седьмой шаг
+								echo $k;
+								echo "</div>";
+							}
+							if ($k%7==0){ //каждый седьмой шаг
+								echo $k;
+								echo "</div>";
+							}
+							if ($k == 16){
+								echo "</div>";
+								echo "</div>";
+								echo $k;
+							}
+							if ($k%2==0){ //каждый второй шаг
+								$two++;
+							}
+							$k++;
+						}
+						//echo $k."<br>";
+						echo $two." два шага <br>";
+						echo $one." один шаг";
+						//echo $thre ." третий шаг";
+					}
+				?>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<!--<div class="trend-block">
+								<img src="img/trend/egor.jpg">
+								<div class="shadow-block">
+									<p>OBLADAET</p>
+								</div>
+							</div> -->

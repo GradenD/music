@@ -62,130 +62,53 @@
 <div class="container">
 	<div class="trending">
 		<h1>OUR TRENDING</h1>
-		<h2>Albums</h1>
+		<h2>Albums</h2>
 		<div class="trend-gallery">
 			<div class="conrol">
 				<div id="trend-left" class="control-row">
-					<i class="fas fa-chevron-left"></i>
+					<i class="fas fa-chevron-left" aria-hidden="true"></i>
 				</div>
 				<div id="trend-right" class="control-row">
-					<i class="fas fa-chevron-right"></i>
+					<i class="fas fa-chevron-right" aria-hidden="true"></i>
 				</div>
 			</div>
 			<div id="trend-albums" class="albums">
-				<div class="trend-column">
-					<div class="trend-block">
-						<img data-src="img/trend/egor.jpg">
-						<div class="shadow-block">
-							<p>OBLADAET</p>
-						</div>
-					</div>
-					<div class="trend-block">
-						<img data-src="img/trend/hollywood.jpg">
-						<div class="shadow-block">
-							<p>OBLADAET</p>
-						</div>
-					</div>
-				</div>
-				<div class="trend-column">
-					<div class="trend-block">
-						<img data-src="img/trend/lcp.jpg">
-						<div class="shadow-block">
-							<p>OBLADAET</p>
-						</div>
-					</div>
-					<div class="trend-block">
-						<img data-src="img/trend/markus.jpg">
-						<div class="shadow-block">
-							<p>OBLADAET</p>
-						</div>
-					</div>
-				</div>
-				<div class="trend-column">
-					<div class="trend-block">
-						<img data-src="img/trend/obladaet.jpg">
-						<div class="shadow-block">
-							<p>OBLADAET</p>
-						</div>
-					</div>
-					<div class="trend-block">
-						<img data-src="img/trend/pharaoh.jpg">
-						<div class="shadow-block">
-							<p>OBLADAET</p>
-						</div>
-					</div>
-				</div>
-				<div class="trend-column">
-					<div class="trend-block">
-						<img data-src="img/trend/pvris.jpg">
-						<div class="shadow-block">
-							<p>OBLADAET</p>
-						</div>
-					</div>
-					<div class="trend-block">
-						<img data-src="img/trend/skillet.jpg">
-						<div class="shadow-block">
-							<p>OBLADAET</p>
-						</div>
-					</div>				
-				</div>
-
-				<div class="trend-column">
-					<div class="trend-block">
-						<img data-src="img/trend/egor.jpg">
-						<div class="shadow-block">
-							<p>OBLADAET</p>
-						</div>
-					</div>
-					<div class="trend-block">
-						<img data-src="img/trend/hollywood.jpg">
-						<div class="shadow-block">
-							<p>OBLADAET</p>
-						</div>
-					</div>
-				</div>
-				<div class="trend-column">
-					<div class="trend-block">
-						<img data-src="img/trend/lcp.jpg">
-						<div class="shadow-block">
-							<p>OBLADAET</p>
-						</div>
-					</div>
-					<div class="trend-block">
-						<img data-src="img/trend/markus.jpg">
-						<div class="shadow-block">
-							<p>OBLADAET</p>
-						</div>
-					</div>
-				</div>
-				<div class="trend-column">
-					<div class="trend-block">
-						<img data-src="img/trend/obladaet.jpg">
-						<div class="shadow-block">
-							<p>OBLADAET</p>
-						</div>
-					</div>
-					<div class="trend-block">
-						<img data-src="img/trend/pharaoh.jpg">
-						<div class="shadow-block">
-							<p>OBLADAET</p>
-						</div>
-					</div>
-				</div>
-				<div class="trend-column">
-					<div class="trend-block">
-						<img data-src="img/trend/pvris.jpg">
-						<div class="shadow-block">
-							<p>OBLADAET</p>
-						</div>
-					</div>
-					<div class="trend-block">
-						<img data-src="img/trend/skillet.jpg">
-						<div class="shadow-block">
-							<p>OBLADAET</p>
-						</div>
-					</div>				
-				</div>
+				<?php
+					global $db;
+        			$q = $db->query("SELECT * FROM album ORDER BY listening DESC LIMIT 17;");
+        			if($q) {
+            			$arr = [];
+            			$i=0;
+            			while($r=$q->fetch_assoc()){
+                			$arr[$i]=$r;
+                			$i++;
+						}
+						$k = 1;
+						$two = 0;
+						$thre = 0;
+						foreach($arr as $key=>$value){
+							if ($k == 1){
+								echo "<div class=\"trend-column animate\">";
+							}
+							?>
+							<div class="trend-block">
+								<img src="img/albums/<?=$value["img"]?>">
+								<div class="shadow-block">
+									<p><?=$value["tytle"]?></p>
+								</div>
+							</div> 
+							<?php
+							if ($k%2==0){ //каждый второй шаг
+								echo "</div>";
+								echo "<div class=\"trend-column animate\">";
+								$two++;
+							}
+							$k++;
+						}
+						//echo $k."<br>";
+						//echo count($arr);
+					}
+				?>
 			</div>
 		</div>
 	</div>
