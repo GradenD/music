@@ -92,7 +92,7 @@ $('#trend-left').click(function(){
 
 //плейлист popular
 $(document).ready(function(){
-
+    /*
     new jPlayerPlaylist({
         jPlayer: "#jquery_jplayer_1",
         cssSelectorAncestor: "#jp_container_1"
@@ -156,6 +156,7 @@ $(document).ready(function(){
             keyEnabled: true
         }
     );
+    */
 
     $('#music-list li').click(function() {
         console.log('click');

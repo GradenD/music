@@ -84,8 +84,6 @@
                 			$i++;
 						}
 						$k = 1;
-						$two = 0;
-						$thre = 0;
 						foreach($arr as $key=>$value){
 							if ($k == 1){
 								echo "<div class=\"trend-column animate\">";
@@ -101,7 +99,6 @@
 							if ($k%2==0){ //каждый второй шаг
 								echo "</div>";
 								echo "<div class=\"trend-column animate\">";
-								$two++;
 							}
 							$k++;
 						}
@@ -120,7 +117,7 @@
 			<h2>Songs</h2>
 			<div class="index-music">
 				<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-				<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+				<div id="jp_container_1" class="jp-audio jp-state-looped" role="application" aria-label="media player">
 					<div class="jp-type-playlist">
 						<div class="jp-gui jp-interface">
 							<div class="jp-controls"> 
@@ -131,6 +128,7 @@
 									<div class="jp-play-bar"></div>
 								</div>
 							</div>
+
 							<div class="jp-volume-controls">
 								<button class="jp-mute" role="button" tabindex="0">mute</button>
 								<div class="jp-volume-bar">
@@ -209,19 +207,29 @@
                     <h1>INSTAGRAM</h1>
                 </div>
                 <div class="post-body inst-body">
-                    <img data-src="img/inst/egor.jpg">
-                    <img data-src="img/inst/hollywood.jpg">
-                    <img data-src="img/inst/lcp.jpg">
-                    <img data-src="img/inst/markus.jpg">
-                    <img data-src="img/inst/obladaet.jpg">
-                    <img data-src="img/inst/pharaoh.jpg">
-                    <img data-src="img/inst/pvris.jpg">
-                    <img data-src="img/inst/skillet.jpg">
-                    <img data-src="img/inst/mnogo.jpg">
+					<?php
+						global $db;
+        				$q = $db->query("SELECT * FROM instagram ORDER BY date DESC LIMIT 6");
+        				if($q) {
+            				$arr = [];
+            				$i=0;
+            				while($r=$q->fetch_assoc()){
+                				$arr[$i]=$r;
+                				$i++;
+							}
+							foreach($arr as $key=>$value){
+								?>
+									<img src="img/inst/<?=$value["img"]?>">
+								<?php
+							}
+						}
+    				?>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+<?php 
+	require_once 'action/popular-undex.php';
+?>
 <script type="text/javascript" src='js/index.js'></script>

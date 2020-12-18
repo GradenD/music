@@ -416,7 +416,7 @@ header{
 
 .albums .trend-column .trend-block{
 	position: relative;
-	height: 11rem;
+	height: 15.3rem;
 	width: 100%;
 	margin-bottom: 1rem;
 	background: #1a121f;
@@ -433,7 +433,7 @@ header{
 	bottom: 0;
 	opacity: 0;
 	transition: .5s;
-	padding: 5px;
+	padding: 1rem;
 	display: flex;
     display: -ms-flexbox;
 	display: -webkit-flex;
@@ -495,6 +495,10 @@ header{
 		flex: 0 0 45%;
 		max-width: 45%;
 		margin-bottom: 1rem;
+	}
+
+	.albums .trend-column .trend-block{
+		height: auto;
 	}
 
 	.shadow-block{
