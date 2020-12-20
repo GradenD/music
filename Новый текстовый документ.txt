@@ -1,8 +1,0 @@
-					<!--<div class="trend-column trend-active" id="trend-perv">
-						<div class="trend-block">
-							<img src="img/trend/egor.jpg">
-							<div class="shadow-block">
-								<p>OBLADAET</p>
-							</div>
-						</div>					
-					</div>-->
