@@ -2,6 +2,10 @@ header {
     box-shadow: 0px 0px 0px rgba(5, 12, 22, 0.54);
 }
 
+header a:hover{
+    color:  #ffff;
+}
+
 a {
     color: #212529;;
     text-decoration: none;
