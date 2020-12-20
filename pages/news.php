@@ -282,15 +282,23 @@
                     <h1>INSTAGRAM</h1>
                 </div>
                 <div class="post-body inst-body">
-                    <img data-src="img/inst/egor.jpg">
-                    <img data-src="img/inst/hollywood.jpg">
-                    <img data-src="img/inst/lcp.jpg">
-                    <img data-src="img/inst/markus.jpg">
-                    <img data-src="img/inst/obladaet.jpg">
-                    <img data-src="img/inst/pharaoh.jpg">
-                    <img data-src="img/inst/pvris.jpg">
-                    <img data-src="img/inst/skillet.jpg">
-                    <img data-src="img/inst/mnogo.jpg">
+                    <?php
+					    global $db;
+        				$q = $db->query("SELECT * FROM instagram ORDER BY date DESC LIMIT 6");
+        				if($q) {
+            				$arr = [];
+            				$i=0;
+            				while($r=$q->fetch_assoc()){
+                				$arr[$i]=$r;
+                				$i++;
+							}
+							foreach($arr as $key=>$value){
+								?>
+									<img data-src="img/inst/<?=$value["img"]?>">
+								<?php
+							}
+						}
+    				?>
                 </div>
             </div>
         </div>

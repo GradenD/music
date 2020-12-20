@@ -174,39 +174,92 @@
             <div class="chart-but"></div>
         </div>
         <div id="chart" class="chart-body">
-            <div class="items-chart col-lg-offset-3">
-				<p>Obladaet - 3D19</p>
-                <audio preload="auto" controls>
-					<source src="music/Obladaet - 3D19.mp3">
-				</audio>
-            </div> 
-            <div class="items-chart col-lg-offset-3">
-				<p>Beau Young Prince - Let Go</p>
-                <audio preload="auto" controls>
-					<source src="music/Beau Young Prince - Let Go.mp3">
-				</audio>
-            </div>
-            <div class="items-chart col-lg-offset-3">
-				<p>Mnogoznaal - Речная Часть</p>
-                <audio preload="auto" controls>
-					<source src="music/Mnogoznaal - Речная Часть.mp3">
-				</audio>
-            </div>
-            <div class="items-chart col-lg-offset-3">
-				<p>MARKUSPHOENIX - Mirrors</p>
-                <audio preload="auto" controls>
-					<source src="music/MARKUSPHOENIX - Mirrors.mp3">
-				</audio>
-            </div>
-            <div class="items-chart col-lg-offset-3">
-				<p>Pharaoh - На Луне</p>
-                <audio preload="auto" controls>
-					<source src="music/Pharaoh - На Луне.mp3">
-				</audio>
+            <div class="chart-songs">
+                <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+				    <div id="jp_container_1" class="jp-audio jp-state-looped" role="application" aria-label="media player">
+					    <div class="jp-type-playlist">
+						    <div class="jp-gui jp-interface">
+							    <div class="jp-controls"> 
+								    <button class="jp-play" role="button" tabindex="0">play</button>
+							    </div>
+							    <div class="jp-progress">
+								    <div class="jp-seek-bar">
+									    <div class="jp-play-bar"></div>
+								    </div>
+							    </div>
+							    <div class="jp-volume-controls">
+								    <button class="jp-mute" role="button" tabindex="0">mute</button>
+								    <div class="jp-volume-bar">
+									    <div class="jp-volume-bar-value"></div>
+								    </div>
+							    </div>
+							    <div class="jp-time-holder">
+								    <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+								    <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+							    </div>
+						    </div>
+						    <div class="jp-playlist">
+							    <ul id="music-list">
+								    <li class="loader">
+									    <div class="item-1">
+									    <div class="item-2">
+									    <div class="item-3">
+									    <div class="item-4">
+									    <div class="item-5">
+								    </li>
+							    </ul>
+						    </div>
+						    <div class="jp-no-solution">
+							    <span>Update Required</span>
+						    </div>
+					    </div>
+ 				    </div>
+                </div>
+                <div class="chart-albums">
+                    <div class="albums-column">
+                        <div class="albums-head">
+                            <h1>CHART ALBUMS</h1>
+                        </div>
+                        <div class="albums-body">
+                            <?php
+						        global $db;
+                                $q = $db->query("SELECT * FROM album ORDER BY listening DESC LIMIT 4");
+                                if($q) {
+                                    $arr = [];
+                                    $i=0;
+                                    while($r=$q->fetch_assoc()){
+                                        $arr[$i]=$r;
+                                        $i++;
+                                    }
+                                    foreach($arr as $key=>$value){
+                                        $k=$value['autor'];
+                                        $autor= $db->query("SELECT * FROM author WHERE id=$k"); 
+                                        $artist = $autor->fetch_assoc();
+                                        $emp = $artist["name"];
+                                        ?>
+                                        <div class="albums ">
+                                            <div class="albums-img">
+                                                <img data-src="img/albums/<?=$value["img"]?>">
+                                            </div>
+                                            <div class="albums-title">
+                                                <h1><?=$value["tytle"]?><br>by <?=$emp?></h1>
+                                                <p><?=$value["date"]?></p>
+                                            </div>
+                                        </div>
+                                        <?php
+                                    }
+                                }
+                            ?>
+                        </div>
+                    </div>
+                    <div class="albums-column"></div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<?php 
+	require_once 'action/music-chart.php';
+?>
 
-<script src="js/audio-touch.js"></script> 
 <script type="text/javascript" src='js/music.js'></script>

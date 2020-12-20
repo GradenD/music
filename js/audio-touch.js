@@ -77,6 +77,8 @@
 
 			var thePlayer = $( '<div class="' + params.classPrefix + '">' + ( isSupport ? $( '<div>' ).append( $this.eq( 0 ).clone() ).html() : '<embed src="' + audioFile + '" width="0" height="0" volume="100" autostart="' + isAutoPlay.toString() +'" loop="' + isLoop.toString() + '" />' ) + '<div class="' + cssClass.playPause + '" title="' + params.strPlay + '"><a href="#">' + params.strPlay + '</a></div></div>' ),
 				theAudio  = isSupport ? thePlayer.find( 'audio' ) : thePlayer.find( 'embed' ), theAudio = theAudio.get( 0 );
+				theAllAudio  = isSupport ? $('audio') : $('audio'), theAllAudio = theAllAudio.get( 0 );
+				theall =  new Array();
 
 			if( isSupport )
 			{
@@ -194,8 +196,22 @@
 				}
 				else
 				{
+					/*let trend= $('body');
+					let i = 0;
+					$.each(trend, function(){
+						theall[i] = $(this).find( 'audio' ) ;
+						$(this).find( 'audio' ).pause();
+						i = i + 1;
+						console.log(theall[i]);
+					});*/
+
 					$( this ).attr( 'title', params.strPause ).find( 'a' ).html( params.strPause );
+					$('.audioplayer-playpause').attr( 'title', params.strPlay ).find( 'a' ).html( params.strPlay );
+					$('.audioplayer').removeClass( cssClass.playing ).addClass( cssClass.stopped );
 					thePlayer.addClass( cssClass.playing ).removeClass( cssClass.stopped );
+					console.log(theAllAudio);
+					//$('.audioplayer').find('audio').pause();
+					isSupport ? theAllAudio.pause(): theAllAudio.Stop();
 					isSupport ? theAudio.play() : theAudio.Play();
 				}
 				return false;

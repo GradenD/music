@@ -367,7 +367,23 @@
     list-style-type: none;
     margin: 0;
     padding: 0 0px;
-    font-size: .72em
+    font-size: .72em;
+    height: 24.4rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-color: rgb(210,210,210) rgb(46,54,69) !important;
+    scrollbar-width: thin !important;
+}
+
+.jp-playlist ul::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+
+.jp-playlist ul::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #df001f;;
 }
 
 .jp-playlist li {

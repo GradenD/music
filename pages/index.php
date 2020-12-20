@@ -1,4 +1,3 @@
-<link rel="stylesheet" type="text/css" href="css/playlist.css">
 <div class="slider">
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   		<ol class="carousel-indicators">
@@ -219,7 +218,7 @@
 							}
 							foreach($arr as $key=>$value){
 								?>
-									<img src="img/inst/<?=$value["img"]?>">
+									<img data-src="img/inst/<?=$value["img"]?>">
 								<?php
 							}
 						}

@@ -13,15 +13,3 @@ $(document).ready(function(){
  		};
 	});
 })
-
-$( function(){
-	$( 'audio' ).audioPlayer(
-	{
-		classPrefix: 'audioplayer',
-		strPlay: 'Play',
-		strPause: 'Pause',
-		strVolume: 'Volume',
-		loop: true
-	});
-		
-});
