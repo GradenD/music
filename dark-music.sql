@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Дек 20 2020 г., 15:26
+-- Время создания: Дек 21 2020 г., 18:38
 -- Версия сервера: 5.6.37
 -- Версия PHP: 5.5.38
 
@@ -117,19 +117,6 @@ INSERT INTO `instagram` (`id`, `tytle`, `img`, `date`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `music`
---
-
-CREATE TABLE `music` (
-  `id` int(11) NOT NULL,
-  `tytle` varchar(255) NOT NULL,
-  `autor` varchar(255) NOT NULL,
-  `album` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
 -- Структура таблицы `music_autor`
 --
 
@@ -157,6 +144,34 @@ INSERT INTO `music_autor` (`id`, `tytle`, `autor`, `listening`, `mp3`, `img`) VA
 (8, 'Coming Home', 7, 266, 'Hollywood Undead - Coming Home.mp3', 'hollywood.jpg'),
 (9, 'Wish You Well', 8, 999, 'PVRIS - Wish You Well.mp3', 'pvris.jpg'),
 (10, 'You and I', 8, 1234, 'Pvris - You and I.mp3', 'pvris-you.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `music_profile`
+--
+
+CREATE TABLE `music_profile` (
+  `id` int(11) NOT NULL,
+  `user` int(11) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `img` varchar(255) NOT NULL,
+  `tytle` varchar(255) NOT NULL,
+  `autor` varchar(255) NOT NULL,
+  `date` date NOT NULL,
+  `listening` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `music_profile`
+--
+
+INSERT INTO `music_profile` (`id`, `user`, `url`, `img`, `tytle`, `autor`, `date`, `listening`) VALUES
+(1, 1, 'Markul - Скалы.mp3', 'masrk-skall.jpg', 'Скалы', 'Markul', '2020-12-01', 5),
+(2, 1, 'Obladaet - 3D19.mp3', 'obladaet.jpg', '3D19', 'Obladaet', '2020-12-04', 9),
+(3, 1, 'MARKUSPHOENIX - Mirrors.mp3', 'markus.jpg', 'Mirrors', 'MARKUSPHOENIX', '2020-12-10', 7),
+(4, 1, 'Pvris - You and I.mp3', 'pvris-you.jpg', 'You and I', 'PVRIS', '2020-12-16', 6),
+(5, 1, 'Mnogoznaal - Речная Часть.mp3', 'mnogo.jpg', 'Речная Часть', 'Mnogoznaal', '2020-12-18', 3);
 
 -- --------------------------------------------------------
 
@@ -225,7 +240,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `name`, `lastname`, `birthday`, `phone`, `email`, `password`, `country`, `skype`, `instagram`, `role`, `date`) VALUES
 (1, 'Иван', 'Бахарев', '1998-04-05', '89507260264', 'bacharevia@mail.ru', '81dc9bdb52d04dc20036dbd8313ed055', 'Russian', 'live:.cid.d1924dba0ec65b2b', 'The Gallywix Community', 1, '2020-11-30 19:00:00'),
-(3, 'Олежа', 'Олегович', '0000-00-00', '76776678', 'paxom.tema2@mail.ru', '934b535800b1cba8f96a5d72f72f1611', 'Enter your Country 2', 'Enter your Skype 2', 'instagram 222', 2, '2020-12-16 11:45:19');
+(3, 'Олежа', 'Олегович', '0000-00-00', '76776678', 'paxom.tema2@mail.ru', '81dc9bdb52d04dc20036dbd8313ed055', 'Enter your Country 2', 'Enter your Skype 2', 'instagram 222', 2, '2020-12-16 11:45:19');
 
 --
 -- Индексы сохранённых таблиц
@@ -251,17 +266,18 @@ ALTER TABLE `instagram`
   ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `music`
---
-ALTER TABLE `music`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Индексы таблицы `music_autor`
 --
 ALTER TABLE `music_autor`
   ADD PRIMARY KEY (`id`),
   ADD KEY `autor` (`autor`);
+
+--
+-- Индексы таблицы `music_profile`
+--
+ALTER TABLE `music_profile`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user` (`user`);
 
 --
 -- Индексы таблицы `news_glav`
@@ -302,15 +318,15 @@ ALTER TABLE `author`
 ALTER TABLE `instagram`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
--- AUTO_INCREMENT для таблицы `music`
---
-ALTER TABLE `music`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
 -- AUTO_INCREMENT для таблицы `music_autor`
 --
 ALTER TABLE `music_autor`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+--
+-- AUTO_INCREMENT для таблицы `music_profile`
+--
+ALTER TABLE `music_profile`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT для таблицы `news_glav`
 --
@@ -341,6 +357,12 @@ ALTER TABLE `album`
 --
 ALTER TABLE `music_autor`
   ADD CONSTRAINT `music_autor_ibfk_1` FOREIGN KEY (`autor`) REFERENCES `author` (`id`);
+
+--
+-- Ограничения внешнего ключа таблицы `music_profile`
+--
+ALTER TABLE `music_profile`
+  ADD CONSTRAINT `music_profile_ibfk_1` FOREIGN KEY (`user`) REFERENCES `user` (`id`);
 
 --
 -- Ограничения внешнего ключа таблицы `user`
