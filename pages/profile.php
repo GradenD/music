@@ -1,4 +1,6 @@
-<?php require_once 'action/user-info.php'; ?>
+<?php 
+	require_once 'action/user-info.php'; 
+?>
 <link rel="stylesheet" type="text/css" href="css/profile.css">
 <div class="container">
     <div class="user-form">
@@ -39,6 +41,49 @@
             </div>
         </div>
         <div id="info-user" class="info-user"></div> 
-    </div>
+	</div>
+	<div class="music-user">
+		<div id="music-action" class="music-playlist"></div>
+		<div class="music-param">
+			<div class="param-column">
+				<div class="param-head">
+					<h1>MY ALBUMS</h1>
+				</div>
+				<div id="albums" class="param-body">
+					<div class="albums">
+						<div class="albums-img">
+							<img data-src="img/albums/all-we.jpg">
+						</div>
+						<div class="albums-title">
+							<h1>All We Know Of Heaven, All We Need Of Hell<br>by PVRIS</h1>
+							<p>2020-12-20</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="param-column">
+				<div class="param-head">
+					<h1>AUDIO RECORDINGS</h1>
+				</div>
+				<div id="records" class="param-body">
+					<div id="sounds-all" class="recordings" formaction="/action/pr-all-music.php">
+						<p><i class="fas fa-music" aria-hidden="true"></i> All</p>
+					</div>
+					<div id="popular" class="recordings" formaction="/action/pr-popular-music.php">
+						<p><i class="fas fa-fire" aria-hidden="true"></i> Popularity</p>
+					</div>
+					<div class="recordings" formaction="/action/pr-date-music.php">
+						<p><i class="fas fa-calendar-alt" aria-hidden="true"></i> By date added</p>
+					</div>
+					<div class="recordings" formaction="/action/pr-name-music.php">
+						<p><i class="fas fa-signature" aria-hidden="true"></i> By name</p>
+					</div>
+					<div class="recordings" formaction="/action/pr-performer-music.php">
+						<p><i class="fas fa-theater-masks" aria-hidden="true"></i> By performer</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <script type="text/javascript" src='js/profile.js'></script>
