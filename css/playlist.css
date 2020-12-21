@@ -368,22 +368,23 @@
     margin: 0;
     padding: 0 0px;
     font-size: .72em;
-    height: 24.4rem;
+    height: auto;
+    max-height: 24.6rem;
     overflow: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    scrollbar-color: rgb(210,210,210) rgb(46,54,69) !important;
+    scrollbar-color: rgb(223, 0,31) rgb(33, 37, 41) !important;
     scrollbar-width: thin !important;
 }
 
 .jp-playlist ul::-webkit-scrollbar {
     width: 5px;
-    background: transparent;
+    background: #212529;
 }
 
 .jp-playlist ul::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background: #df001f;;
+    background: #df001f;
 }
 
 .jp-playlist li {
