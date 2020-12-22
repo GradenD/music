@@ -74,7 +74,7 @@
 			<div id="trend-albums" class="albums">
 				<?php
 					global $db;
-        			$q = $db->query("SELECT * FROM album ORDER BY listening DESC LIMIT 17;");
+        			$q = $db->query("SELECT * FROM album ORDER BY listening DESC LIMIT 18;");
         			if($q) {
             			$arr = [];
             			$i=0;
@@ -109,121 +109,112 @@
 		</div>
 	</div>
 </div>
-<div class="container">
-    <div class="blog">
-        <div class="blog-content">
-			<h1>POPULAR</h1>
-			<h2>Songs</h2>
-			<div class="index-music">
-				<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-				<div id="jp_container_1" class="jp-audio jp-state-looped" role="application" aria-label="media player">
-					<div class="jp-type-playlist">
-						<div class="jp-gui jp-interface">
-							<div class="jp-controls"> 
-								<button class="jp-play" role="button" tabindex="0">play</button>
-							</div>
-							<div class="jp-progress">
-								<div class="jp-seek-bar">
-									<div class="jp-play-bar"></div>
-								</div>
-							</div>
-
-							<div class="jp-volume-controls">
-								<button class="jp-mute" role="button" tabindex="0">mute</button>
-								<div class="jp-volume-bar">
-									<div class="jp-volume-bar-value"></div>
-								</div>
-							</div>
-							<div class="jp-time-holder">
-								<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
-								<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+<div class="blog">
+    <div class="blog-content">
+		<h1>POPULAR</h1>
+		<h2>Songs</h2>
+		<div class="index-music">
+			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+			<div id="jp_container_1" class="jp-audio jp-state-looped" role="application" aria-label="media player">
+				<div class="jp-type-playlist">
+					<div class="jp-gui jp-interface">
+						<div class="jp-controls"> 
+							<button class="jp-play" role="button" tabindex="0">play</button>
+						</div>
+						<div class="jp-progress">
+							<div class="jp-seek-bar">
+								<div class="jp-play-bar"></div>
 							</div>
 						</div>
-						<div class="jp-playlist">
-							<ul id="music-list">
-								<li class="loader">
-									<div class="item-1">
-									<div class="item-2">
-									<div class="item-3">
-									<div class="item-4">
-									<div class="item-5">
-								</li>
-							</ul>
+						<div class="jp-volume-controls">
+							<button class="jp-mute" role="button" tabindex="0">mute</button>
+							<div class="jp-volume-bar">
+								<div class="jp-volume-bar-value"></div>
+							</div>
 						</div>
-						<div class="jp-no-solution">
-							<span>Update Required</span>
+						<div class="jp-time-holder">
+							<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+							<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
 						</div>
 					</div>
- 				</div>
-			</div>
-        </div>
-        <div class="blog-social">
-            <div class="recent-posts social-content">
-                <div class="post-head">
-                    <h1>RECENT POST</h1>
+					<div class="jp-playlist">
+						<ul id="music-list">
+							<li class=""></li>
+						</ul>
+					</div>
+					<div class="jp-no-solution">
+						<span>Update Required</span>
+					</div>
+				</div>
+ 			</div>
+		</div>
+    </div>
+    <div class="blog-social">
+        <div class="recent-posts social-content">
+            <div class="post-head">
+                <h1>RECENT POST</h1>
+            </div>
+            <div class="post-body">
+                <div class="post">
+                    <div class="post-img">
+                        <img data-src="img/post/pvris.jpg">
+                    </div>
+                    <div class="post-title">
+                        <h1>Lorem ipsum dolor sit amet, consec</h1>
+                        <p>July 5, 2016</p>
+                    </div>
                 </div>
-                <div class="post-body">
-                    <div class="post">
-                        <div class="post-img">
-                            <img data-src="img/post/pvris.jpg">
-                        </div>
-                        <div class="post-title">
-                            <h1>Lorem ipsum dolor sit amet, consec</h1>
-                            <p>July 5, 2016</p>
-                        </div>
+                <div class="post">
+                    <div class="post-img">
+                        <img data-src="img/post/pharaoh.jpg">
                     </div>
-                    <div class="post">
-                        <div class="post-img">
-                            <img data-src="img/post/pharaoh.jpg">
-                        </div>
-                        <div class="post-title">
-                            <h1>Ut wisi enim ad minim veniam, quis</h1>
-                            <p>July 17, 2016</p>
-                        </div>
+                    <div class="post-title">
+                        <h1>Ut wisi enim ad minim veniam, quis</h1>
+                        <p>July 17, 2016</p>
                     </div>
-                    <div class="post">
-                        <div class="post-img">
-                            <img data-src="img/post/skillet.jpg">
-                        </div>
-                        <div class="post-title">
-                            <h1>Aliquip ex ea commodo aliquam erat volutpat</h1>
-                            <p>July 21, 2016</p>
-                        </div>
+                </div>
+                <div class="post">
+                    <div class="post-img">
+                        <img data-src="img/post/skillet.jpg">
                     </div>
-                    <div class="post">
-                        <div class="post-img">
-                            <img data-src="img/post/lcp.jpg">
-                        </div>
-                        <div class="post-title">
-                            <h1>Ut wisi enim ad minim veniam, quis</h1>
-                            <p>July 17, 2016</p>
-                        </div>
+                    <div class="post-title">
+                        <h1>Aliquip ex ea commodo aliquam erat volutpat</h1>
+                        <p>July 21, 2016</p>
                     </div>
+                </div>
+                <div class="post">
+                    <div class="post-img">
+                        <img data-src="img/post/lcp.jpg">
+                    </div>
+                    <div class="post-title">
+                        <h1>Ut wisi enim ad minim veniam, quis</h1>
+                        <p>July 17, 2016</p>
+                     </div>
                 </div>
             </div>
-            <div class="recent-posts social-content inst">
-                <div class="post-head">
-                    <h1>INSTAGRAM</h1>
-                </div>
-                <div class="post-body inst-body">
-					<?php
-						global $db;
-        				$q = $db->query("SELECT * FROM instagram ORDER BY date DESC LIMIT 6");
-        				if($q) {
-            				$arr = [];
-            				$i=0;
-            				while($r=$q->fetch_assoc()){
-                				$arr[$i]=$r;
-                				$i++;
-							}
-							foreach($arr as $key=>$value){
-								?>
-									<img data-src="img/inst/<?=$value["img"]?>">
-								<?php
-							}
+        </div>
+        <div class="recent-posts social-content inst">
+            <div class="post-head">
+                <h1>INSTAGRAM</h1>
+            </div>
+            <div class="post-body inst-body">
+				<?php
+					global $db;
+        			$q = $db->query("SELECT * FROM instagram ORDER BY date DESC LIMIT 6");
+        			if($q) {
+            			$arr = [];
+            			$i=0;
+            			while($r=$q->fetch_assoc()){
+                			$arr[$i]=$r;
+                			$i++;
 						}
-    				?>
-                </div>
+						foreach($arr as $key=>$value){
+							?>
+								<img data-src="img/inst/<?=$value["img"]?>">
+							<?php
+						}
+					}
+    			?>
             </div>
         </div>
     </div>

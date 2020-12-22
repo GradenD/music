@@ -22,6 +22,7 @@ $(document).ready(function(){
             $emp = $artist["name"];
         ?>
 	        {
+                id: "<?=$value["id"]?>",
                 title:"<?=$value["tytle"]?>",
                 artist:"<?=$emp?>",
                 mp3:"music/<?=$value["mp3"]?>",   

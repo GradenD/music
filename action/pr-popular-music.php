@@ -10,9 +10,6 @@
 	$music = $q->fetch_assoc();
     if(!empty($music)){
         require_once '../action/pr-playlist.php';
-	}else{
-		echo "Add music";
-	}
 ?>
 <script>
 $(document).ready(function(){
@@ -64,3 +61,9 @@ $(document).ready(function(){
     );
 });
 </script>
+
+<?php
+	}else{
+		echo "Add music";
+    }
+?>

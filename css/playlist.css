@@ -649,10 +649,31 @@ div.jp-type-playlist div.jp-playlist a:hover {
 		width: 70%;
 	}
 }
+.jp-playlist .select{
+    display: none;
+}
 
 
+.jp-playlist-current .select{
+    display: block;
+	width: auto;
+	height: 100%;
+	margin-right: 1rem;
+	position: absolute;
+	top: 10px;
+	right: 50px;
+    text-align: center;
+    color: #ffff;
+    cursor: pointer;
+}
 
+.jp-playlist-current .select .sound-check{
+    display: none;
+}
 
+.jp-playlist-current .select li{
+    font-size: 1rem;
+}
 
 .jp-playlist-current .loader{
 	width: auto;
