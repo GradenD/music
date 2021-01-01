@@ -656,8 +656,8 @@ div.jp-type-playlist div.jp-playlist a:hover {
 
 .jp-playlist-current .select{
     display: block;
-	width: auto;
-	height: 100%;
+    width: 25px;
+    height: 25px;
 	margin-right: 1rem;
 	position: absolute;
 	top: 10px;

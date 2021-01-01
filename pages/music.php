@@ -200,13 +200,7 @@
 						    </div>
 						    <div class="jp-playlist">
 							    <ul id="music-list">
-								    <li class="loader">
-									    <div class="item-1">
-									    <div class="item-2">
-									    <div class="item-3">
-									    <div class="item-4">
-									    <div class="item-5">
-								    </li>
+								    <li class="loader"></li>
 							    </ul>
 						    </div>
 						    <div class="jp-no-solution">
@@ -214,6 +208,7 @@
 						    </div>
 					    </div>
  				    </div>
+                     <p id="add-otevet"></p>
                 </div>
                 <div class="chart-albums">
                     <div class="albums-column">

@@ -53,6 +53,21 @@ input {
     outline: none;
 }
 
+@-webkit-keyframes autofill {
+	100% {
+	  color: inherit;
+	  background: transparent;
+	}
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+}
+
 @media (max-width: 991px) {
 	.devise{
 		display: none;
@@ -827,9 +842,14 @@ header{
     background: #959595;
     border: 0px solid #959595;
     color: #ffffff;
-    width: 125px;
+	width: 155px;
+	letter-spacing: 3px;
+	text-align: center;
 }
 
+.tab-btn label{
+	cursor: pointer;
+}
 /* news */
 
 .heading-news{

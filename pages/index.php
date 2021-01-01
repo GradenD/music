@@ -148,6 +148,7 @@
 				</div>
  			</div>
 		</div>
+		<p id="add-otevet"></p>
     </div>
     <div class="blog-social">
         <div class="recent-posts social-content">

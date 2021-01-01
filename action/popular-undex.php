@@ -29,8 +29,8 @@ $(document).ready(function(){
                 poster: "img/music/<?=$value["img"]?>" 
             },
 		<?php
-		}
-	}
+        }
+    }
 ?>
         ], 
         {
@@ -48,4 +48,5 @@ $(document).ready(function(){
         }
     );
 });
+
 </script>

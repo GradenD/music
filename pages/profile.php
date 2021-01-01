@@ -83,6 +83,16 @@
 					</div>
 				</div>
 			</div>
+			<div class="param-column">
+				<div class="param-head">
+					<h1>LOADING</h1>
+				</div>
+				<div id="load" class="param-body">
+					<div id="sounds-load" class="recordings" formaction="/action/download-sounds.php">
+						<p><i class="fas fa-file-download"></i> Loading sounds</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

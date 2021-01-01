@@ -17,6 +17,21 @@ a:focus {
     color:  #212529;;
 }
 
+@-webkit-keyframes autofill {
+	100% {
+	  color: inherit;
+	  background: transparent;
+	}
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #495057 !important;
+}
+
 .user-form {
     display: flex;
     display: -ms-flexbox;
@@ -262,6 +277,15 @@ a:focus {
     padding-left: 1rem;
 }
 
+.music-user .music-playlist .tab-btn{
+    text-align: left;
+    padding-top: 0px;
+}
+
+.music-user .music-playlist .tab-btn .btn-send{
+    margin: 0rem 0px;
+}
+
 .music-user .music-param{
     width: 40%;
     padding: 0rem 1rem;
@@ -376,4 +400,43 @@ a:focus {
         margin-bottom: 2rem;
         padding: 0rem 0.5rem;
 	}
+}
+
+/* loading file */
+.bottom-load{
+    margin-bottom: 1rem;
+}
+
+.info-poster h1{
+    letter-spacing: 3px;
+    margin: 2rem 0rem;
+}
+
+.info-poster .poster{
+    height: 250px;
+    width: auto;
+    text-align: center;
+}
+
+.info-poster .poster img{
+    height: 100%;
+    max-width: 100%;
+}
+
+.tab-btn input{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.music-user .music-playlist .btn-add{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.inp-none{
+    display: none;
 }
