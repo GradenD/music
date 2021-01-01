@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Дек 21 2020 г., 18:38
+-- Время создания: Янв 01 2021 г., 17:42
 -- Версия сервера: 5.6.37
--- Версия PHP: 5.5.38
+-- Версия PHP: 7.1.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -155,11 +155,11 @@ CREATE TABLE `music_profile` (
   `id` int(11) NOT NULL,
   `user` int(11) NOT NULL,
   `url` varchar(255) NOT NULL,
-  `img` varchar(255) NOT NULL,
+  `img` varchar(255) NOT NULL DEFAULT 'audio-defoult.jpg',
   `tytle` varchar(255) NOT NULL,
   `autor` varchar(255) NOT NULL,
-  `date` date NOT NULL,
-  `listening` int(255) NOT NULL
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `listening` int(255) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -167,11 +167,12 @@ CREATE TABLE `music_profile` (
 --
 
 INSERT INTO `music_profile` (`id`, `user`, `url`, `img`, `tytle`, `autor`, `date`, `listening`) VALUES
-(1, 1, 'Markul - Скалы.mp3', 'masrk-skall.jpg', 'Скалы', 'Markul', '2020-12-01', 5),
-(2, 1, 'Obladaet - 3D19.mp3', 'obladaet.jpg', '3D19', 'Obladaet', '2020-12-04', 9),
-(3, 1, 'MARKUSPHOENIX - Mirrors.mp3', 'markus.jpg', 'Mirrors', 'MARKUSPHOENIX', '2020-12-10', 7),
-(4, 1, 'Pvris - You and I.mp3', 'pvris-you.jpg', 'You and I', 'PVRIS', '2020-12-16', 6),
-(5, 1, 'Mnogoznaal - Речная Часть.mp3', 'mnogo.jpg', 'Речная Часть', 'Mnogoznaal', '2020-12-18', 3);
+(1, 1, 'Markul - Скалы.mp3', 'masrk-skall.jpg', 'Скалы', 'Markul', '2020-11-30 19:00:00', 5),
+(2, 1, 'Obladaet - 3D19.mp3', 'obladaet.jpg', '3D19', 'Obladaet', '2020-12-03 19:00:00', 9),
+(3, 1, 'MARKUSPHOENIX - Mirrors.mp3', 'markus.jpg', 'Mirrors', 'MARKUSPHOENIX', '2020-12-09 19:00:00', 7),
+(4, 1, 'Pvris - You and I.mp3', 'pvris-you.jpg', 'You and I', 'PVRIS', '2020-12-15 19:00:00', 6),
+(5, 1, 'Mnogoznaal - Речная Часть.mp3', 'mnogo.jpg', 'Речная Часть', 'Mnogoznaal', '2020-12-17 19:00:00', 3),
+(6, 1, 'Katya Tu - Настоящую.mp3', 'katya-tu-bez-filtrov.jpg', 'Настоящую', 'Katya Tu', '2020-12-31 19:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -326,7 +327,7 @@ ALTER TABLE `music_autor`
 -- AUTO_INCREMENT для таблицы `music_profile`
 --
 ALTER TABLE `music_profile`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT для таблицы `news_glav`
 --
