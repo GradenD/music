@@ -7,10 +7,10 @@
     </div>
 </div>
 <div class="container">
-    <div class="news">
+    <div class="news d-flex justify-content-between">
         <div class="news-content">
             <div id="load-block" class="news-columns">
-                <div class="news-items">
+                <div class="news-items d-flex">
                     <div class="news-body">
                         <a href="/?page=post">
                             <div class="head-items">
@@ -18,7 +18,7 @@
                                 <h1>I am a Blog Post Title</h1>
                                 <p class="name"><i class="fas fa-user" aria-hidden="true"></i> by Jenn Pereira</p>
                             </div>
-                            <div class="text">
+                            <div class="text d-flex">
                                 <p>
                                     Phasellus et nisl tellus. Etiam facilisis eu nisi 
                                     scelerisque faucibus. Proin semper suscipit magna, 
@@ -28,7 +28,7 @@
                                 </p>
                             </div>
                         </a>
-                        <div class="foot-items">
+                        <div class="foot-items d-flex justify-content-between">
                             <div class="date">
                                 <p><i class="far fa-calendar" aria-hidden="true"></i>  on July 19, 2016</p>
                             </div>
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="news-items">
+                <div class="news-items d-flex">
                     <img data-src="img/news/news-1.jpg">
                     <div class="news-body">
                         <a href="/?page=post">
@@ -49,7 +49,7 @@
                                 <h1>I am a Blog Post with an Awesome Image</h1>
                                 <p class="name"><i class="fas fa-user" aria-hidden="true"></i> by Jenn Pereira</p>
                             </div>
-                            <div class="text">
+                            <div class="text d-flex">
                                 <p>
                                     Proin semper suscipit magna, nec imperdiet lacus 
                                     semper vitae. Sed hendrerit enim non justo posuere 
@@ -57,7 +57,7 @@
                                 </p>
                             </div>
                         </a>
-                        <div class="foot-items">
+                        <div class="foot-items d-flex justify-content-between">
                             <div class="date">
                                 <p><i class="far fa-calendar" aria-hidden="true"></i>  on July 19, 2016</p>
                             </div>
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="news-items">
+                <div class="news-items d-flex">
                     <img data-src="img/news/news-2.jpg">
                     <div class="news-body">
                         <a href="/?page=post">
@@ -78,7 +78,7 @@
                                 <h1>I am a Blog Post with an Awesome Image</h1>
                                 <p class="name"><i class="fas fa-user" aria-hidden="true"></i> by Jenn Pereira</p>
                             </div>
-                            <div class="text">
+                            <div class="text d-flex">
                                 <p>
                                     Proin semper suscipit magna, nec imperdiet lacus 
                                     semper vitae. Sed hendrerit enim non justo posuere 
@@ -86,7 +86,7 @@
                                 </p>
                             </div>
                         </a>
-                        <div class="foot-items">
+                        <div class="foot-items d-flex justify-content-between">
                             <div class="date">
                                 <p><i class="far fa-calendar" aria-hidden="true"></i>  on July 19, 2016</p>
                             </div>
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="news-items">
+                <div class="news-items d-flex">
                     <div class="news-body">
                         <a href="/?page=post">
                             <div class="head-items">
@@ -107,7 +107,7 @@
                                 <h1>I am a Blog Post Title</h1>
                                 <p class="name"><i class="fas fa-user" aria-hidden="true"></i> by Jenn Pereira</p>
                             </div>
-                            <div class="text">
+                            <div class="text d-flex">
                                 <p>
                                     Phasellus et nisl tellus. Etiam facilisis eu nisi 
                                     scelerisque faucibus. Proin semper suscipit magna, 
@@ -117,7 +117,7 @@
                                 </p>
                             </div>
                         </a>
-                        <div class="foot-items">
+                        <div class="foot-items d-flex justify-content-between">
                             <div class="date">
                                 <p><i class="far fa-calendar" aria-hidden="true"></i>  on July 19, 2016</p>
                             </div>
@@ -130,7 +130,7 @@
                         </div>
                     </div>
                 </div> 
-                <div class="news-items">
+                <div class="news-items d-flex">
                     <img data-src="img/news/news-3.jpg">
                     <div class="news-body">
                         <a href="/?page=post">
@@ -138,7 +138,7 @@
                                 <h1>I am a Blog Post with an Awesome Image</h1>
                                 <p class="name"><i class="fas fa-user" aria-hidden="true"></i> by Jenn Pereira</p>
                             </div>
-                            <div class="text">
+                            <div class="text d-flex">
                                 <p>
                                     Proin semper suscipit magna, nec imperdiet lacus 
                                     semper vitae. Sed hendrerit enim non justo posuere 
@@ -146,7 +146,7 @@
                                 </p>
                             </div>
                         </a>
-                        <div class="foot-items">
+                        <div class="foot-items d-flex justify-content-between">
                             <div class="date">
                                 <p><i class="far fa-calendar" aria-hidden="true"></i>  on July 19, 2016</p>
                             </div>
@@ -159,7 +159,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="news-items">
+                <div class="news-items d-flex">
                     <div class="news-body">
                         <a href="/?page=post">
                             <div class="head-items">
@@ -167,7 +167,7 @@
                                 <h1>I am a Blog Post Title</h1>
                                 <p class="name"><i class="fas fa-user" aria-hidden="true"></i> by Jenn Pereira</p>
                             </div>
-                            <div class="text">
+                            <div class="text d-flex">
                                 <p>
                                     Phasellus et nisl tellus. Etiam facilisis eu nisi 
                                     scelerisque faucibus. Proin semper suscipit magna, 
@@ -177,7 +177,7 @@
                                 </p>
                             </div>
                         </a>
-                        <div class="foot-items">
+                        <div class="foot-items d-flex justify-content-between">
                             <div class="date">
                                 <p><i class="far fa-calendar" aria-hidden="true"></i>  on July 19, 2016</p>
                             </div>
@@ -199,13 +199,13 @@
                 </div>
             </div>
         </div>
-        <div class="news-social">
-            <div class="recent-posts social-content">
+        <div class="news-social d-flex">
+            <div class="recent-posts  d-flex social-content">
                 <div class="post-head">
                     <h1>RECENT POST</h1>
                 </div>
-                <div class="post-body">
-                    <div class="post">
+                <div class="post-body d-flex">
+                    <div class="post  d-flex justify-content-start">
                         <div class="post-img">
                             <img data-src="img/post/pvris.jpg">
                         </div>
@@ -214,7 +214,7 @@
                             <p>July 5, 2016</p>
                         </div>
                     </div>
-                    <div class="post">
+                    <div class="post d-flex justify-content-start">
                         <div class="post-img">
                             <img data-src="img/post/pharaoh.jpg">
                         </div>
@@ -223,7 +223,7 @@
                             <p>July 17, 2016</p>
                         </div>
                     </div>
-                    <div class="post">
+                    <div class="post d-flex justify-content-start">
                         <div class="post-img">
                             <img data-src="img/post/skillet.jpg">
                         </div>
@@ -232,7 +232,7 @@
                             <p>July 21, 2016</p>
                         </div>
                     </div>
-                    <div class="post">
+                    <div class="post d-flex justify-content-start">
                         <div class="post-img">
                             <img data-src="img/post/lcp.jpg">
                         </div>
@@ -243,11 +243,11 @@
                     </div>
                 </div>
             </div>
-            <div class="recent-posts social-content popular-tags">
+            <div class="recent-posts  d-flex social-content popular-tags">
                 <div class="post-head">
                     <h1>POPULAR TAGS</h1>
                 </div>
-                <div id="tags" class="post-body tags-body">
+                <div id="tags" class="post-body d-flex tags-body justify-content-around">
                     <div class="tags">
                         <p>Hip-Hop/Rap</p>
                     </div>
@@ -277,11 +277,11 @@
                     </div>
                 </div>
             </div>
-            <div class="recent-posts social-content inst">
+            <div class="recent-posts  d-flex social-content inst">
                 <div class="post-head">
                     <h1>INSTAGRAM</h1>
                 </div>
-                <div class="post-body inst-body">
+                <div class="post-body d-flex inst-body justify-content-around">
                     <?php
 					    global $db;
         				$q = $db->query("SELECT * FROM instagram ORDER BY date DESC LIMIT 6");

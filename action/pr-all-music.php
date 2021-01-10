@@ -35,6 +35,7 @@ $(document).ready(function(){
             $url_img = $value['img'];
         ?>
 	        {
+                id: "<?=$value["id"]?>",
                 title:"<?=$title_sounds?>",
                 artist:"<?=$emp?>",
                 mp3:"music/<?=$url_sounds?>",   
@@ -61,7 +62,7 @@ $(document).ready(function(){
     );
 });
 </script>
-
+<script type="text/javascript" src='js/operation-music.js'></script>
 <?php
 	}else{
 		echo "Add music";

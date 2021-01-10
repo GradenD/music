@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="css/log.css">
 <div class="log-fon"></div>
-<div class="log-wrapper">
-    <div class="log-block">
+<div class="log-wrapper d-flex justify-content-center">
+    <div class="log-block d-flex ">
         <div class="logo">
             <img data-src="img/logo.png">
         </div>
@@ -45,7 +45,7 @@
 					</div>
                 </div>
                 <div class="col-12 col-pad">
-                    <div class="form-but">
+                    <div class="form-but d-flex justify-content-center">
                         <button id="log" class="btn btn-primary btn-lg btn-block login-button" type="submit">REGISTRATION</button>
                         <p style="color: red;" id="php-otvet"></p>
                         <a href="/?page=log"><p>Already have an account? Sign in!</p></a>

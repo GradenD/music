@@ -114,9 +114,6 @@ a:focus {
 }
 
 .wrapper{
-	display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
 	flex-direction: column;
 	min-height: 100%;
 	width: 100%;
@@ -198,8 +195,6 @@ header{
 }
 
 .header .main-menu ul{
-	display: -ms-flexbox;
-    display: flex;
 	-ms-flex-direction: row;
 	flex-direction: row;
 	flex-flow: row wrap;
@@ -212,9 +207,6 @@ header{
 }
 
 .header .main-menu .social{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-flow: row wrap;
 	margin-left: 1.5rem;
 }
@@ -385,17 +377,11 @@ header{
 }
 
 .trending .trend-gallery{
-	display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
 	flex-direction: column;
 	width: 100%;
 }
 
 .trending .trend-gallery .conrol{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	-webkit-justify-content: flex-end;
 	justify-content: flex-end;
 }
@@ -409,12 +395,7 @@ header{
 }
 
 .trending .trend-gallery .albums{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-flow: row wrap;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
 	margin-top: 0.6rem;
 	transition: transform 0.6s ease;
 } 
@@ -523,11 +504,6 @@ header{
 
 /* index blog*/
 .blog{
-	display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    -webkit-justify-content: space-between;
-	justify-content: space-between;
 	width: 100%;
 	padding: 2rem 0rem;
 }
@@ -552,13 +528,8 @@ header{
 
 
 .index-music{
-	display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    flex-flow: row wrap;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
 	padding: 2rem 0rem;
+	flex-direction: column;
 }
 
 .index-music .img-music{
@@ -574,9 +545,6 @@ header{
 .blog .blog-social{
 	width: 35%;
 	padding-left: 30px;
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-direction: column;
 	font-family: 'Roboto';
     font-weight: 700;
@@ -595,9 +563,6 @@ header{
 }
 
 .blog .blog-social  .recent-posts{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-direction: column;
 	width: 100%;
 }
@@ -617,9 +582,6 @@ header{
 }
 
 .recent-posts .post-body{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-direction: column;
 	background: #ffffff;
 	padding: 15px;
@@ -627,11 +589,6 @@ header{
 }
 
 .post-body .post{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
-	-webkit-justify-content: flex-start;
-	justify-content: flex-start;
 	width: 100%;
 	margin-bottom: 15px;
 	cursor: pointer;
@@ -648,12 +605,7 @@ header{
 }
 
 .post-body .post .post-title{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-direction: column;
-	-webkit-justify-content: space-between;
-    justify-content: space-between;
 	width: 60%;
 	padding-left: 10px;
 }
@@ -677,8 +629,6 @@ header{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	flex-flow: row wrap;
-	-webkit-justify-content: space-around;
-	justify-content: space-around;
 }
 
 
@@ -740,12 +690,7 @@ header{
 }
 
 .tab-nav{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-flow: row wrap;
-    -webkit-justify-content: center;
-	justify-content: center;
 	width: 100%;
 	padding: 15px 0px;
 	border-top: 1px solid #e1e1e1; 
@@ -753,9 +698,6 @@ header{
 }
 
 .tab-nav .lines{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-direction: row;
 	align-items: center;
 	font-size: 1.2rem;
@@ -850,6 +792,7 @@ header{
 .tab-btn label{
 	cursor: pointer;
 }
+
 /* news */
 
 .heading-news{
@@ -889,11 +832,6 @@ header{
 }
 
 .news{
-	display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    -webkit-justify-content: space-between;
-	justify-content: space-between;
 	width: 100%;
 	padding: 3.1rem 0px;
 }
@@ -915,8 +853,6 @@ header{
 
 .news .news-content .news-columns .news-items{
 	position: relative;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-direction: column;
 	flex-direction: column;
 	page-break-inside: avoid;
@@ -962,9 +898,6 @@ header{
 }
 
 .news-items .news-body .text{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-direction: column;
 	padding: 1.2rem 0px;
 	padding-bottom: 0px;
@@ -977,11 +910,6 @@ header{
 }
 
 .news-items .news-body .foot-items{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
-    -webkit-justify-content: space-between;
-	justify-content: space-between;
 	padding-top: 1.2rem;
 }
 
@@ -1014,9 +942,6 @@ header{
 .news .news-social{
 	width: 35%;
 	padding-left: 1.9rem;
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-direction: column;
 	font-family: 'Roboto';
     font-weight: 700;
@@ -1048,9 +973,6 @@ header{
 }
 
 .news .news-social  .recent-posts{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-direction: column;
 	width: 100%;
 }
@@ -1059,8 +981,6 @@ header{
 	padding-top: 1.25rem;
 	padding-bottom: 1.25rem;
 	flex-flow: row wrap;
-	-webkit-justify-content: space-around;
-	justify-content: space-around;
 }
 
 .popular-tags .tags-body .tags{
@@ -1193,9 +1113,6 @@ header{
 }
 
 .popular-songs .songs-gallery .songs-content{
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
 	transition: transform 0.6s ease;
 	position: relative;
 	width: 100%;
@@ -1249,12 +1166,7 @@ header{
 }
 
 .songs-column .info{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-direction: column;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
 	padding: 0.5rem 1rem;
 	padding-bottom: 0rem;
 	min-height: 200px;
@@ -1269,12 +1181,7 @@ header{
 }
 
 .songs-column .info .social{
-	display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
 	flex-flow: row wrap;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
 	padding: 1rem 0rem;
 }
 
@@ -1345,12 +1252,7 @@ header{
 }
 
 .new-relize .relize-head{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-flow: row wrap;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
 }
 
 .new-relize .relize-head .relize-but{
@@ -1373,12 +1275,7 @@ header{
 }
 
 .new-relize .relize-content{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-flow: row wrap;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
 	padding: 2rem 0rem;
 	padding-bottom: 0rem;
 	width: 100%;
@@ -1396,12 +1293,7 @@ header{
 }
 
 .relize-column .info{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-direction: column;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
 	width: 100%;
 	padding: 0.5rem 0rem;
 }
@@ -1442,12 +1334,7 @@ header{
 }
 
 .music-chart .chart-head{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-flow: row wrap;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
 }
 
 .nmusic-chart .chart-head .chart-but{
@@ -1470,32 +1357,19 @@ header{
 }
 
 .chart-body{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-flow: row wrap;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
 	width: 100%;
 	padding: 1.5rem 0.5rem;
 }
 
 .chart-songs{
-	display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     flex-flow: row wrap;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
 	width: 60%;
 }
 
 .chart-albums{
 	width: 40%;
 	padding-left: 30px;
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     flex-direction: column;
     font-family: 'Roboto';
     font-weight: 700;
@@ -1503,9 +1377,6 @@ header{
 }
 
 .chart-albums .albums-column{
-	display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     flex-direction: column;
     width: 100%;
 }
@@ -1525,9 +1396,6 @@ header{
 }
 
 .albums-column .albums-body{
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     flex-direction: column;
     background: #ffffff;
     padding: 1rem;
@@ -1535,11 +1403,6 @@ header{
 }
 
 .albums-body .albums{
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
     width: 100%;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -1556,12 +1419,7 @@ header{
 }
 
 .albums-body .albums .albums-title {
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     flex-direction: column;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
     width: 60%;
     padding-left: 10px;
 }
@@ -1610,24 +1468,15 @@ header{
 }
 
 .foot-content{
-	display: flex;
-    display: -ms-flexbox;
-	display: -webkit-flex;
 	flex-direction: column;
-	-webkit-justify-content: center;
-	justify-content: center;
 	text-align: center;
 	padding: 2.3rem 0rem;
 }
 
 .foot-content ul{
-	display: -ms-flexbox;
-    display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
 	flex-flow: row wrap;
-	justify-content: center;
-	-webkit-justify-content: center;
     text-decoration: none;
     list-style: none;
 }

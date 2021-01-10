@@ -7,9 +7,9 @@
     <h1>Edit Password</h1>
 </div>
 <form id="form-auth" class="action-form" method="post" action="javascript:void(0);">
-    <div class="info-boddy">
+    <div class="info-boddy d-flex justify-content-between">
         <div class="column">
-            <div class="bio-row bio-input">
+            <div class="bio-row d-flex bio-input">
                 <div class="form-group">
 				    <label for="password" class="cols-sm-2 control-label">New Password</label>
 				    <div class="input-group">
@@ -18,7 +18,7 @@
 				    </div>
                 </div>
             </div>
-            <div class="bio-row bio-input">
+            <div class="bio-row d-flex bio-input">
                 <div class="form-group">
 				    <label for="password" class="cols-sm-2 control-label">Confirm New Password</label>
 				    <div class="input-group">
@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="column">
-            <div class="bio-row bio-input">
+            <div class="bio-row d-flex bio-input">
                 <div class="form-group">
 				    <label for="new-password" class="cols-sm-2 control-label">Password</label>
 				    <div class="input-group">

@@ -2,8 +2,8 @@
 		</div>
 		<footer class="footer">
 			<div class="container">
-				<div class="foot-content">
-					<ul>
+				<div class="foot-content d-flex justify-content-center">
+					<ul class="d-flex justify-content-center">
 						<li class="active">
 							<a href="/?page=index">HOME </a>
 						</li>

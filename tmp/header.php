@@ -9,7 +9,6 @@
 	<title>Music</title>
 	<script type="text/javascript" src='js/jQuery.js'></script>
 	<script type="text/javascript" src='js/jquery.jplayer.min.js'></script>
-	<script type="text/javascript" src='js/jplayer.playlist.min.js'></script>
 	<script type="text/javascript" src='js/fontawesome.js'></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css">
@@ -21,7 +20,7 @@
     <link rel="shortcut icon" href="">
   </head>
 <body>	
-	<div class="wrapper">
+	<div class="wrapper d-flex">
 		<div id="devise" class="devise"></div>
 		<div class="preloader">Loading</div>
 		<header id="header">
@@ -34,7 +33,7 @@
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="main-menu collapse navbar-collapse">
-						<ul class="navbar-nav nav-margin">
+						<ul class="navbar-nav nav-margin d-flex">
 							<li class="active">
 								<a href="/?page=index">HOME</a>
 							</li>
@@ -47,8 +46,13 @@
 							<li>
 								<a href="/?page=music">MUSIC</a>
 							</li>
+							<?php if($admin):?>
+								<li>
+									<a href="/?page=admin">ADMIN</a>
+								</li>
+							<?php endif;?>
 						</ul>
-						<div class="social">
+						<div class="social d-flex">
 							<?php if($auth):?>
 							<a class="user" href="/?page=profile">
 								<span class="icon icon-user">

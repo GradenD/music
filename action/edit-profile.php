@@ -7,9 +7,9 @@
     <h1>Edit profile</h1>
 </div>
 <form id="form-auth" class="action-form" method="post" action="javascript:void(0);">
-    <div class="info-boddy">
+    <div class="info-boddy d-flex justify-content-between">
 	    <div class="column">
-            <div class="bio-row bio-input">
+            <div class="bio-row d-flex bio-input">
                 <div class="form-group">
 				    <label for="username" class="cols-sm-2 control-label">Your Name</label>
 				    <div class="input-group">
@@ -18,7 +18,7 @@
 				    </div>
 			    </div>
             </div>
-            <div class="bio-row bio-input">
+            <div class="bio-row d-flex bio-input">
                 <div class="form-group">
                     <label for="date" class="cols-sm-2 control-label">Your Last Name</label>
 				    <div class="input-group">
@@ -27,7 +27,7 @@
 				    </div>
 			    </div>
             </div>
-            <div class="bio-row bio-input">
+            <div class="bio-row d-flex bio-input">
                 <div class="form-group">
                 <label for="date" class="cols-sm-2 control-label">Your Birthday</label>
                     <div class="input-group" id="date">
@@ -47,7 +47,7 @@
 			</div>
         </div>
         <div class="column">
-            <div class="bio-row bio-input">
+            <div class="bio-row d-flex bio-input">
                 <div class="form-group">
 				    <label for="phone" class="cols-sm-2 control-label">Phone</label>
 				    <div class="input-group">

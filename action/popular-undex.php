@@ -45,6 +45,8 @@ $(document).ready(function(){
             autoBlur: false,
             smoothPlayBar: true,
             keyEnabled: true,
+            repeat: '.jp-repeat',
+            repeatOff: '.jp-repeat-off',
         }
     );
 });

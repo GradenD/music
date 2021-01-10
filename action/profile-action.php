@@ -6,7 +6,7 @@
 <div class="info-head">
     <h1>Bio Graph</h1>
 </div>
-<div class="info-boddy">
+<div class="info-boddy d-flex justify-content-between">
 	<div class="column">
 		<div class="bio-row">
 			<p>First Name: <?=$usrName?> </p>

@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="css/log.css">
 <div class="log-fon"></div>
-<div class="log-wrapper">
-    <div class="log-block">
+<div class="log-wrapper d-flex justify-content-center">
+    <div class="log-block d-flex ">
         <a href="/?page=index">
             <div class="previos">
                 <i class="fas fa-chevron-left" aria-hidden="true"></i>
@@ -32,7 +32,7 @@
 					</div>
                 </div>
                 <div class="col-12 col-pad">
-                    <div class="form-but">
+                    <div class="form-but d-flex justify-content-center">
 						<button id="log" name="log" class="btn btn-primary btn-lg btn-block login-button">LOGIN</button>
                         <a href=""><p>Forgot password?</p></a>
                         <a href="/?page=register"><p>Registration</p></a>

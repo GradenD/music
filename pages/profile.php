@@ -3,8 +3,8 @@
 ?>
 <link rel="stylesheet" type="text/css" href="css/profile.css">
 <div class="container">
-    <div class="user-form">
-        <div id="config-user" class="config-user">
+    <div class="user-form d-flex justify-content-between">
+        <div id="config-user" class="config-user d-flex">
             <div class="row user-mb">
                 <div class="col-12">
                     <div class="user-head">
@@ -40,32 +40,34 @@
                 </div>
             </div>
         </div>
-        <div id="info-user" class="info-user"></div> 
+        <div id="info-user" class="info-user d-flex justify-content-between"></div> 
 	</div>
-	<div class="music-user">
-		<div id="music-action" class="music-playlist"></div>
+	<div class="music-user d-flex justify-content-between">
+		<div id="music-action" class="music-playlist">
+			<p id="add-otevet"></p>
+		</div>
 		<div class="music-param">
-			<div class="param-column">
+			<div class="param-column d-flex">
 				<div class="param-head">
 					<h1>MY ALBUMS</h1>
 				</div>
-				<div id="albums" class="param-body">
-					<div class="albums">
+				<div id="albums" class="param-body d-flex">
+					<div class="albums d-flex justify-content-start">
 						<div class="albums-img">
 							<img data-src="img/albums/all-we.jpg">
 						</div>
-						<div class="albums-title">
+						<div class="albums-title d-flex justify-content-between">
 							<h1>All We Know Of Heaven, All We Need Of Hell<br>by PVRIS</h1>
 							<p>2020-12-20</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="param-column">
+			<div class="param-column d-flex">
 				<div class="param-head">
 					<h1>AUDIO RECORDINGS</h1>
 				</div>
-				<div id="records" class="param-body">
+				<div id="records" class="param-body d-flex">
 					<div id="sounds-all" class="recordings" formaction="/action/pr-all-music.php">
 						<p><i class="fas fa-music" aria-hidden="true"></i> All</p>
 					</div>
@@ -83,11 +85,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="param-column">
+			<div class="param-column d-flex">
 				<div class="param-head">
 					<h1>LOADING</h1>
 				</div>
-				<div id="load" class="param-body">
+				<div id="load" class="param-body d-flex">
 					<div id="sounds-load" class="recordings" formaction="/action/download-sounds.php">
 						<p><i class="fas fa-file-download"></i> Loading sounds</p>
 					</div>
@@ -96,4 +98,5 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript" src='js/jplayer.playlist.min.pr.js'></script>
 <script type="text/javascript" src='js/profile.js'></script>

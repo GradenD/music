@@ -17,32 +17,32 @@
 
 <div class="features">
     <div class="container">
-        <div class="tab-nav">
-            <div class="lines active">
+        <div class="tab-nav d-flex justify-content-center">
+            <div class="lines d-flex  active">
                 <p>ULL</p>
                 <div class="ln"></div>
             </div>
-            <div class="lines">
+            <div class="lines d-flex ">
                 <p>Hip-Hop/Rap</p>
                 <div class="ln"></div>
             </div>
-            <div class="lines">
+            <div class="lines d-flex ">
                 <p>Electronic</p>
                 <div class="ln"></div>
             </div>
-            <div class="lines">
+            <div class="lines d-flex ">
                 <p>Rock</p>
                 <div class="ln"></div>
             </div>
-            <div class="lines">
+            <div class="lines d-flex ">
                 <p>Pop Music</p>
                 <div class="ln"></div>
             </div>
-            <div class="lines">
+            <div class="lines d-flex ">
                 <p>Dance</p>
                 <div class="ln"></div>
             </div>
-            <div class="lines">
+            <div class="lines d-flex ">
                 <p>Techno</p>
             </div>
         </div>

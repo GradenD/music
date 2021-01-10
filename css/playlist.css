@@ -658,7 +658,7 @@ div.jp-type-playlist div.jp-playlist a:hover {
     display: block;
     width: 25px;
     height: 25px;
-	margin-right: 1rem;
+	margin-right: 0.1rem;
 	position: absolute;
 	top: 10px;
 	right: 50px;
@@ -738,3 +738,24 @@ div.jp-type-playlist div.jp-playlist a:hover {
 	  -webkit-transform: scaleY(1.0);
 	}
   }
+
+.jp-playlist .repeat{
+    display: none;
+}
+
+.jp-playlist-current .repeat{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: 2.5rem;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    text-align: center;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.jp-playlist-current .repeat-active{
+    color: #df001f;
+}

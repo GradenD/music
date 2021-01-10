@@ -33,19 +33,11 @@ input:-webkit-autofill:active {
 }
 
 .user-form {
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
     width: 100%;
     padding: 3.5rem 0rem;
 }
 
 .config-user {
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     background: #ffffff;
 	box-shadow: 0 6px 20px rgba(0,0,0,0.25), 0 7px 7px rgba(0,0,0,0.22);
     padding: 1.2rem 0.3rem;
@@ -98,13 +90,8 @@ input:-webkit-autofill:active {
 }
 
 .info-user {
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     flex-wrap: wrap;
     flex-direction: column;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
     width: 100%;
     margin-left: 1.9rem;
     text-align: left;
@@ -128,11 +115,6 @@ input:-webkit-autofill:active {
 }
 
 .info-boddy {
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
 }
 
 .column {
@@ -140,9 +122,6 @@ input:-webkit-autofill:active {
 }
 
 .bio-row {
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     width: 100%;
     padding-bottom: 40px;
     position: relative;
@@ -175,7 +154,8 @@ input:-webkit-autofill:active {
 }
 
 .form-group span {
-    display: flex;
+    display: -ms-flexbox!important;
+    display: flex!important;
     align-items: center;
     background: #ebebeb;
     padding: .275rem .35rem;
@@ -251,11 +231,6 @@ input:-webkit-autofill:active {
 
 /* music */
 .music-user{
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
     width: 100%;
     padding: 1.5rem 0rem;
     margin-bottom: 3.5rem;
@@ -292,9 +267,6 @@ input:-webkit-autofill:active {
 }
 
 .music-user .music-param  .param-column{
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     flex-direction: column;
     width: 100%;
     margin-bottom: 1rem;
@@ -314,9 +286,6 @@ input:-webkit-autofill:active {
 }
 
 .param-column .param-body {
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     flex-direction: column;
     background: #fafafa;
     padding: 1rem 0.5rem;
@@ -324,11 +293,6 @@ input:-webkit-autofill:active {
 }
 
 .param-body .albums {
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
     width: 100%;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -345,12 +309,7 @@ input:-webkit-autofill:active {
 }
 
 .param-body .albums .albums-title {
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     flex-direction: column;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
     width: 60%;
     padding-left: 10px;
 }

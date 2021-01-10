@@ -62,8 +62,8 @@
 	<div class="trending">
 		<h1>OUR TRENDING</h1>
 		<h2>Albums</h2>
-		<div class="trend-gallery">
-			<div class="conrol">
+		<div class="trend-gallery d-flex">
+			<div class="conrol d-flex">
 				<div id="trend-left" class="control-row">
 					<i class="fas fa-chevron-left" aria-hidden="true"></i>
 				</div>
@@ -71,7 +71,7 @@
 					<i class="fas fa-chevron-right" aria-hidden="true"></i>
 				</div>
 			</div>
-			<div id="trend-albums" class="albums">
+			<div id="trend-albums" class="albums d-flex justify-content-between">
 				<?php
 					global $db;
         			$q = $db->query("SELECT * FROM album ORDER BY listening DESC LIMIT 18;");
@@ -109,11 +109,11 @@
 		</div>
 	</div>
 </div>
-<div class="blog">
+<div class="blog d-flex justify-content-between">
     <div class="blog-content">
 		<h1>POPULAR</h1>
 		<h2>Songs</h2>
-		<div class="index-music">
+		<div class="index-music d-flex justify-content-start">
 			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
 			<div id="jp_container_1" class="jp-audio jp-state-looped" role="application" aria-label="media player">
 				<div class="jp-type-playlist">
@@ -150,44 +150,44 @@
 		</div>
 		<p id="add-otevet"></p>
     </div>
-    <div class="blog-social">
-        <div class="recent-posts social-content">
+    <div class="blog-social d-flex">
+        <div class="recent-posts d-flex social-content">
             <div class="post-head">
                 <h1>RECENT POST</h1>
             </div>
-            <div class="post-body">
-                <div class="post">
+            <div class="post-body d-flex">
+                <div class="post d-flex justify-content-start">
                     <div class="post-img">
                         <img data-src="img/post/pvris.jpg">
                     </div>
-                    <div class="post-title">
+                    <div class="post-title d-flex justify-content-between">
                         <h1>Lorem ipsum dolor sit amet, consec</h1>
                         <p>July 5, 2016</p>
                     </div>
                 </div>
-                <div class="post">
+                <div class="post d-flex justify-content-start">
                     <div class="post-img">
                         <img data-src="img/post/pharaoh.jpg">
                     </div>
-                    <div class="post-title">
+                    <div class="post-title d-flex justify-content-between">
                         <h1>Ut wisi enim ad minim veniam, quis</h1>
                         <p>July 17, 2016</p>
                     </div>
                 </div>
-                <div class="post">
+                <div class="post d-flex justify-content-start">
                     <div class="post-img">
                         <img data-src="img/post/skillet.jpg">
                     </div>
-                    <div class="post-title">
+                    <div class="post-title d-flex justify-content-between">
                         <h1>Aliquip ex ea commodo aliquam erat volutpat</h1>
                         <p>July 21, 2016</p>
                     </div>
                 </div>
-                <div class="post">
+                <div class="post d-flex justify-content-start">
                     <div class="post-img">
                         <img data-src="img/post/lcp.jpg">
                     </div>
-                    <div class="post-title">
+                    <div class="post-title d-flex justify-content-between">
                         <h1>Ut wisi enim ad minim veniam, quis</h1>
                         <p>July 17, 2016</p>
                      </div>
@@ -198,7 +198,7 @@
             <div class="post-head">
                 <h1>INSTAGRAM</h1>
             </div>
-            <div class="post-body inst-body">
+            <div class="post-body d-flex inst-body justify-content-around">
 				<?php
 					global $db;
         			$q = $db->query("SELECT * FROM instagram ORDER BY date DESC LIMIT 6");
@@ -220,7 +220,11 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src='js/jplayer.playlist.min.js'></script>
+
 <?php 
 	require_once 'action/popular-undex.php';
 ?>
+
+<script type="text/javascript" src='js/operation-music.js'></script>
 <script type="text/javascript" src='js/index.js'></script>
